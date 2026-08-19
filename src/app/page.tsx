@@ -159,7 +159,7 @@ export default function Home() {
           <motion.div
             animate={{ scale: [1, 1.25, 1], opacity: [0.08, 0.18, 0.08] }}
             transition={{ duration: 24, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-            className="absolute bottom-0 -right-[10%] w-[50vw] h-[50vw] rounded-full bg-orange-500/10 blur-[160px]"
+            className="absolute bottom-0 -right-[10%] w-[50vw] h-[50vw] rounded-full bg-blue-500/10 blur-[160px]"
           />
           {/* Dot grid */}
           <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:40px_40px]" />
@@ -202,7 +202,7 @@ export default function Home() {
             </AnimatePresence>
 
             {/* Line 2 — types after line 1 finishes */}
-            <div className="text-4xl md:text-6xl lg:text-[5.5rem] text-transparent bg-clip-text bg-gradient-to-r from-brand via-orange-400 to-yellow-500 block mt-2 min-h-[1.2em]">
+            <div className="text-4xl md:text-6xl lg:text-[5.5rem] text-transparent bg-clip-text bg-gradient-to-r from-brand via-blue-400 to-cyan-500 block mt-2 min-h-[1.2em]">
               <span>{text2}</span>
               {/* Cursor on line 2 while it's typing */}
               {done1 && text2.length < LINE2.length && (
@@ -475,7 +475,7 @@ export default function Home() {
             </h3>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-brand text-white hover:bg-brand/90 px-10 py-7 text-base rounded-full font-bold shadow-[0_0_50px_rgba(234,88,12,0.35)] hover:scale-105 transition-all">
+                <Button size="lg" className="bg-brand text-white hover:bg-brand/90 px-10 py-7 text-base rounded-full font-bold shadow-[0_0_50px_rgba(59,130,246,0.35)] hover:scale-105 transition-all">
                   Book A Consultation
                 </Button>
               </Link>

@@ -3,9 +3,9 @@
 @theme {
   --color-background: #030303;
   --color-foreground: #ffffff;
-  --color-brand: #ff9740;
-  --color-brand-light: #ffb373;
-  --color-brand-dark: #cc7833;
+  --color-brand: #3b82f6; /* blue-500 */
+  --color-brand-light: #60a5fa; /* blue-400 */
+  --color-brand-dark: #2563eb; /* blue-600 */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }

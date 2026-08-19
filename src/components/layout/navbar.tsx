@@ -89,7 +89,7 @@ export function Navbar() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-brand text-white text-xs font-bold uppercase tracking-[0.15em] px-6 py-3 rounded-full hover:bg-brand/90 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(234,88,12,0.25)]"
+              className="inline-flex items-center gap-2 bg-brand text-white text-xs font-bold uppercase tracking-[0.15em] px-6 py-3 rounded-full hover:bg-brand/90 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.25)]"
             >
               Build Your Business
             </Link>

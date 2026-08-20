@@ -51,10 +51,10 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="flex items-center gap-6 mb-8">
             <span className="text-2xl font-bold text-brand font-heading border-b-2 border-brand pb-2">Service {service.id}</span>
           </div>
-          <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-heading font-extrabold leading-[0.9] tracking-tighter uppercase mb-8">
+          <h1 className="text-5xl md:text-8xl lg:text-[10rem] font-heading font-extrabold leading-[0.9] tracking-tighter uppercase mb-8">
             {service.title}
           </h1>
-          <p className="text-2xl md:text-4xl text-white/70 font-medium max-w-4xl leading-relaxed">
+          <p className="text-xl md:text-4xl text-white/70 font-medium max-w-4xl leading-relaxed">
             {service.shortDescription}
           </p>
         </div>
@@ -108,14 +108,14 @@ export default async function ServicePage({ params }: PageProps) {
                 {service.process.map((step, index) => (
                   <li key={index} className="flex gap-8 group">
                     <span className="text-3xl font-heading font-bold text-black/20 group-hover:text-brand transition-colors">0{index + 1}</span>
-                    <p className="text-2xl font-medium leading-relaxed pt-1">{step}</p>
+                    <p className="text-xl md:text-2xl font-medium leading-relaxed pt-1">{step}</p>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* The Outcomes */}
-            <div className="bg-[#050505] text-white p-12 md:p-16 rounded-[2rem] shadow-2xl relative overflow-hidden">
+            <div className="bg-[#050505] text-white p-8 md:p-16 rounded-[2rem] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
               <h2 className="text-4xl font-heading font-extrabold uppercase mb-12 text-brand">The Outcomes</h2>
               <ul className="space-y-8 relative z-10">

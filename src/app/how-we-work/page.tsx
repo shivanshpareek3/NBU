@@ -53,7 +53,7 @@ export default function HowWeWorkPage() {
         
         <motion.div style={{ opacity, y }} className="container mx-auto px-6 relative z-10 w-full flex flex-col items-start max-w-7xl">
           <div className="font-semibold tracking-[0.2em] uppercase text-brand mb-6 text-sm md:text-base border-l-2 border-brand pl-4">Methodology</div>
-          <h1 className="text-5xl md:text-8xl lg:text-[9rem] font-heading font-extrabold leading-[0.9] tracking-tighter text-white mb-8">
+          <h1 className="text-4xl md:text-8xl lg:text-[9rem] font-heading font-extrabold leading-[0.9] tracking-tighter text-white mb-8">
             WE DON'T JUST <br/>
             <span className="text-white/40">GIVE ADVICE.</span> <br/>
             WE BUILD THE <br/>
@@ -89,13 +89,13 @@ export default function HowWeWorkPage() {
                     viewport={{ once: true, margin: "-20%" }} 
                     transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <div className="text-brand font-heading font-bold text-6xl md:text-8xl mb-8 opacity-50">
+                    <div className="text-brand font-heading font-bold text-5xl md:text-8xl mb-8 opacity-50">
                       {step.id}
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-heading font-bold uppercase mb-8 leading-[1]">
+                    <h2 className="text-4xl md:text-7xl font-heading font-bold uppercase mb-8 leading-[1]">
                       {step.title}
                     </h2>
-                    <p className="text-2xl text-white/60 leading-relaxed font-medium">
+                    <p className="text-lg md:text-2xl text-white/60 leading-relaxed font-medium">
                       {step.description}
                     </p>
                   </motion.div>
@@ -113,7 +113,7 @@ export default function HowWeWorkPage() {
           <h2 className="text-4xl md:text-7xl font-heading font-extrabold uppercase leading-[1] tracking-tighter mb-12">
             READY TO START THE <span className="text-brand">PROCESS?</span>
           </h2>
-          <p className="text-2xl text-black/60 mb-12 max-w-3xl font-medium">
+          <p className="text-lg md:text-2xl text-black/60 mb-12 max-w-3xl font-medium">
             Book a consultation to discuss your current bottlenecks and how our methodology can reconstruct your operations.
           </p>
           <Button size="lg" asChild className="bg-black text-white hover:bg-black/90 px-12 py-8 text-xl rounded-full font-bold transition-all hover:scale-105">

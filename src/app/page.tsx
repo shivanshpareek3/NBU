@@ -322,7 +322,7 @@ export default function Home() {
       ══════════════════════════════════════════ */}
       <section className="sticky top-0 z-[30] min-h-screen flex flex-col md:flex-row bg-[#0d0d0d]">
         {/* Left — chaos */}
-        <div className="flex-1 p-12 md:p-24 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10">
+        <div className="flex-1 p-8 md:p-12 lg:p-24 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -342,7 +342,7 @@ export default function Home() {
           </motion.div>
         </div>
         {/* Right — system driven */}
-        <div className="flex-1 p-12 md:p-24 flex flex-col justify-center relative overflow-hidden group">
+        <div className="flex-1 p-8 md:p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden group">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-15 group-hover:opacity-30 transition-opacity duration-700 mix-blend-luminosity" />
           <motion.div
             initial={{ opacity: 0, x: 40 }}
@@ -464,7 +464,7 @@ export default function Home() {
                   className={`relative flex flex-col p-10 rounded-3xl bg-white/[0.02] border border-white/10 hover:border-brand/40 hover:bg-brand/[0.02] transition-all duration-500 group overflow-hidden ${spanClass}`}
                 >
                   {/* Large Number Watermark */}
-                  <div className="absolute -right-4 -top-8 text-[8rem] font-heading font-extrabold text-white/[0.02] group-hover:text-brand/[0.05] transition-colors duration-500 select-none pointer-events-none">
+                  <div className="absolute -right-4 -top-4 md:-top-8 text-[5rem] md:text-[8rem] font-heading font-extrabold text-white/[0.02] group-hover:text-brand/[0.05] transition-colors duration-500 select-none pointer-events-none">
                     0{idx + 1}
                   </div>
                   

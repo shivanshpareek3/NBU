@@ -41,10 +41,10 @@ export default function CaseStudiesPage() {
         <div className="container mx-auto px-6 relative z-10 w-full flex flex-col items-center text-center max-w-7xl">
           <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}>
             <div className="font-semibold tracking-[0.2em] uppercase text-brand mb-6 text-sm md:text-base">Results</div>
-            <h1 className="text-5xl md:text-8xl lg:text-[9rem] font-heading font-extrabold leading-[0.9] tracking-tighter text-white mb-8 uppercase">
+            <h1 className="text-4xl md:text-8xl lg:text-[9rem] font-heading font-extrabold leading-[0.9] tracking-tighter text-white mb-8 uppercase">
               The <span className="text-white/40">Proof.</span>
             </h1>
-            <p className="text-xl md:text-3xl text-white/60 font-medium max-w-4xl leading-relaxed mt-12 mx-auto">
+            <p className="text-lg md:text-3xl text-white/60 font-medium max-w-4xl leading-relaxed mt-12 mx-auto">
               We don't deal in theory. We build actual infrastructure that generates measurable scale, reclaims founder time, and transforms chaotic businesses into predictable machines.
             </p>
           </motion.div>
@@ -83,17 +83,17 @@ export default function CaseStudiesPage() {
                   <div className="space-y-8">
                     <div className="pl-6 border-l-2 border-white/10">
                       <h3 className="text-sm font-bold tracking-[0.2em] uppercase text-white/40 mb-2">The Problem</h3>
-                      <p className="text-xl text-white/80">{study.problem}</p>
+                      <p className="text-lg md:text-xl text-white/80">{study.problem}</p>
                     </div>
                     
                     <div className="pl-6 border-l-2 border-brand">
                       <h3 className="text-sm font-bold tracking-[0.2em] uppercase text-brand mb-2">The Infrastructure Built</h3>
-                      <p className="text-xl text-white/90 font-medium">{study.system}</p>
+                      <p className="text-lg md:text-xl text-white/90 font-medium">{study.system}</p>
                     </div>
 
                     <div className="pl-6 border-l-2 border-white/10">
                       <h3 className="text-sm font-bold tracking-[0.2em] uppercase text-white/40 mb-2">The Outcome</h3>
-                      <p className="text-xl text-white/80">{study.outcome}</p>
+                      <p className="text-lg md:text-xl text-white/80">{study.outcome}</p>
                     </div>
                   </div>
                 </div>

@@ -89,13 +89,13 @@ export default function ServicesPage() {
                     </h2>
                   </div>
 
-                  {/* Right: description (hidden on mobile) + arrow */}
-                  <div className="hidden md:flex items-center gap-8 shrink-0 w-[40%] justify-end">
-                    <p className="text-sm text-white/40 group-hover:text-white/70 transition-colors duration-300 text-right max-w-xs leading-relaxed line-clamp-2">
+                  {/* Right: description (hidden on mobile) + arrow (visible on mobile) */}
+                  <div className="flex items-center gap-8 shrink-0 md:w-[40%] justify-end">
+                    <p className="hidden md:block text-sm text-white/40 group-hover:text-white/70 transition-colors duration-300 text-right max-w-xs leading-relaxed line-clamp-2">
                       {service.shortDescription}
                     </p>
-                    <div className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center shrink-0 group-hover:bg-brand group-hover:border-brand transition-all duration-400 group-hover:rotate-[-45deg]">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-white/15 flex items-center justify-center shrink-0 group-hover:bg-brand group-hover:border-brand transition-all duration-400 group-hover:rotate-[-45deg]">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
                     </div>

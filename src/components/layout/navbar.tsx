@@ -41,8 +41,8 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 z-[200] w-full transition-all duration-500 ${
-          scrolled || isOpen
+        className={`absolute top-0 left-0 z-[200] w-full transition-all duration-500 ${
+          isOpen
             ? "bg-[#050505]/90 backdrop-blur-xl border-b border-white/[0.06] shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
             : "bg-transparent"
         }`}

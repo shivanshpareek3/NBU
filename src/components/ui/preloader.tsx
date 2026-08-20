@@ -47,7 +47,7 @@ export function Preloader() {
           className="fixed inset-0 z-[300] flex flex-col items-center justify-center bg-[#030303]"
         >
           {/* Logo Container */}
-          <div className="relative w-64 md:w-80 aspect-[3/1] flex items-center justify-center">
+          <div className="relative w-[22rem] md:w-[36rem] lg:w-[42rem] aspect-[3/1] flex items-center justify-center">
             
             {/* Background Logo (Dimmed) */}
             <Image 

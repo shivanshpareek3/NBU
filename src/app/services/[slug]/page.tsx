@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { SERVICES } from "@/data/services"
 
@@ -43,7 +44,7 @@ export default async function ServicePage({ params }: PageProps) {
       {/* 01 - HERO SECTION */}
       <section className="relative min-h-[90vh] md:min-h-screen flex flex-col justify-end pt-48 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src={bgImage} alt={service.title} className="w-full h-full object-cover grayscale contrast-125 opacity-40" />
+          <Image src={bgImage} alt={service.title} fill priority sizes="100vw" className="object-cover grayscale contrast-125 opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/80 to-transparent" />
         </div>
         

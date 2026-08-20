@@ -3,6 +3,7 @@
 import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function HowWeWorkPage() {
@@ -77,7 +78,7 @@ export default function HowWeWorkPage() {
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                     className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden"
                   >
-                    <img src={step.image} alt={step.title} className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" />
+                    <Image src={step.image} alt={step.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" />
                     <div className="absolute inset-0 bg-brand/10 mix-blend-overlay" />
                   </motion.div>
                 </div>

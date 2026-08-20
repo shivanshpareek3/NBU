@@ -3,6 +3,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
@@ -89,8 +90,11 @@ export default function AboutPage() {
       <section className="py-32 md:py-48 bg-[#0a0a0a]">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <motion.div {...fadeInUp} className="relative h-[600px] rounded-2xl overflow-hidden w-full">
-              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80" alt="Strategy meeting" className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" />
+            <motion.div {...fadeInUp}>
+              <div className="relative aspect-[16/9] md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden group">
+                <Image src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80" alt="Strategy meeting" fill sizes="(max-width: 768px) 100vw, 80vw" className="object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" />
+                <div className="absolute inset-0 bg-brand/10 mix-blend-overlay" />
+              </div>
             </motion.div>
             <motion.div {...fadeInUp} className="pl-0 md:pl-16">
               <h2 className="text-4xl md:text-6xl font-heading font-bold uppercase mb-8">Our Approach</h2>

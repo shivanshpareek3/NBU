@@ -3,6 +3,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function CaseStudiesPage() {
@@ -68,7 +69,7 @@ export default function CaseStudiesPage() {
                 {/* Image Side */}
                 <div className="w-full lg:w-1/2">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden group">
-                    <img src={study.image} alt={study.client} className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
+                    <Image src={study.image} alt={study.client} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                     <div className="absolute inset-0 bg-brand/10 mix-blend-overlay" />
                   </div>
                 </div>

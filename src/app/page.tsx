@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { SERVICES } from "@/data/services"
 
@@ -112,7 +113,7 @@ function ExpandableImages({ autoExpand }: { autoExpand: boolean }) {
           transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1], delay: i * 0.045 }}
           whileHover={{ scale: 1.08, zIndex: 99 }}
         >
-          <img src={img.src} alt={img.alt} className="w-full h-full object-cover grayscale contrast-110" />
+          <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 112px, 128px" className="object-cover grayscale contrast-110" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           {/* Brand tint on hover */}
           <motion.div

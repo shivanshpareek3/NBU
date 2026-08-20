@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { SERVICES } from "@/data/services"
 
@@ -126,10 +127,12 @@ export default function ServicesPage() {
               exit={{ opacity: 0, scale: 0.88, rotate: -3 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
             >
-              <img
+              <Image
                 src={serviceImages[hoveredIndex]}
                 alt=""
-                className="w-full h-full object-cover grayscale contrast-110"
+                fill
+                sizes="224px"
+                className="object-cover grayscale contrast-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </motion.div>

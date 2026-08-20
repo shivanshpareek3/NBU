@@ -11,9 +11,9 @@ export function Footer() {
               <Image
                 src="/logo-removebg-preview.png"
                 alt="No Books University"
-                width={260}
-                height={90}
-                className="h-24 w-auto object-contain"
+                width={400}
+                height={140}
+                className="h-28 md:h-36 w-auto object-contain"
               />
             </Link>
             <p className="text-white/60 text-sm max-w-sm leading-relaxed">

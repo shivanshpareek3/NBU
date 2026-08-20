@@ -57,9 +57,9 @@ export function Navbar() {
             <Image
               src="/logo-no-bg.png"
               alt="No Books University"
-              width={220}
-              height={76}
-              className="h-14 w-auto object-contain"
+              width={300}
+              height={104}
+              className="h-24 md:h-28 w-auto object-contain"
               priority
             />
           </Link>

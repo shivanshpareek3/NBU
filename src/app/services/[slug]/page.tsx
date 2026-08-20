@@ -41,7 +41,7 @@ export default async function ServicePage({ params }: PageProps) {
     <div className="flex flex-col min-h-screen bg-[#030303] text-white">
       
       {/* 01 - HERO SECTION */}
-      <section className="relative h-[80vh] flex flex-col justify-end pb-32 overflow-hidden">
+      <section className="relative min-h-[90vh] md:min-h-screen flex flex-col justify-end pt-48 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={bgImage} alt={service.title} className="w-full h-full object-cover grayscale contrast-125 opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/80 to-transparent" />

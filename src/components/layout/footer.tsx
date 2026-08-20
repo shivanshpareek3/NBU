@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -7,9 +8,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-24">
           <div className="space-y-6">
             <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
-              <span className="text-2xl md:text-3xl font-extrabold text-white tracking-wider">
-                NO BOOKS UNIVERSITY
-              </span>
+              <Image
+                src="/logo-removebg-preview.png"
+                alt="No Books University"
+                width={260}
+                height={90}
+                className="h-24 w-auto object-contain"
+              />
             </Link>
             <p className="text-white/60 text-sm max-w-sm leading-relaxed">
               We help founders and service-based businesses build systems, SOPs, departments, and operational infrastructure that make the business more structured, scalable, and less founder-dependent.

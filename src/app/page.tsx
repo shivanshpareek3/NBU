@@ -416,36 +416,71 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           05 · HOW WE WORK — sticky, pushes over services
       ══════════════════════════════════════════ */}
-      <section className="sticky top-0 z-[50] min-h-screen flex items-center bg-white text-black py-24">
-        <div className="container mx-auto px-6 max-w-7xl w-full">
-          <motion.h2
+      <section className="sticky top-0 z-[50] min-h-screen flex items-center bg-[#0a0a0a] text-white py-24 overflow-hidden">
+        {/* Background glow */}
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-end opacity-30">
+          <div className="w-[800px] h-[800px] bg-brand/10 rounded-full blur-[150px] translate-x-1/3" />
+        </div>
+
+        <div className="container mx-auto px-6 max-w-7xl w-full relative z-10">
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-150px" }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold uppercase tracking-tight mb-20"
+            className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8"
           >
-            How We Work
-          </motion.h2>
-          <div className="grid md:grid-cols-5 gap-6">
-            {["Diagnose", "Design", "Build", "Install", "Optimize"].map((step, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.7, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="flex flex-col border-l-2 border-black/10 hover:border-brand pl-6 transition-colors duration-300 group"
-              >
-                <div className="text-brand font-heading font-extrabold text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">0{idx + 1}</div>
-                <h3 className="text-xl font-bold uppercase tracking-tight mb-3">{step}</h3>
-                <p className="text-sm text-black/55 font-medium leading-relaxed">We construct systems tailored precisely to your operational bottlenecks.</p>
-              </motion.div>
-            ))}
+            <div>
+              <div className="text-brand text-xs font-bold tracking-[0.3em] uppercase mb-4">The Methodology</div>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold uppercase tracking-tight">
+                How We Work
+              </h2>
+            </div>
+            <Link href="/how-we-work" className="hidden md:block">
+              <Button className="bg-white text-black hover:bg-white/90 px-8 py-6 text-sm rounded-full font-bold tracking-wide transition-all hover:scale-105 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                See The Full Process
+              </Button>
+            </Link>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+            {[
+              { title: "Diagnose", desc: "We deep-dive into your operational bottlenecks, identifying where the business is heavily dependent on you and mapping out inefficiencies." },
+              { title: "Design", desc: "We architect custom standard operating procedures, organizational charts, and workflows designed specifically for scale and autonomy." },
+              { title: "Build", desc: "We construct the actual infrastructure—setting up the tech stack, documentation, and training materials needed to support your team." },
+              { title: "Install", desc: "We don't just hand you a manual. We actively integrate these systems into your daily operations and thoroughly train your staff." },
+              { title: "Optimize", desc: "We track performance against strict KPIs, refining the systems until they operate predictably and flawlessly without your intervention." }
+            ].map((step, idx) => {
+              // Create a bento box layout: first 3 span 2 cols, last 2 span 3 cols
+              const spanClass = idx < 3 ? "md:col-span-2" : "md:col-span-3";
+              
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  className={`relative flex flex-col p-10 rounded-3xl bg-white/[0.02] border border-white/10 hover:border-brand/40 hover:bg-brand/[0.02] transition-all duration-500 group overflow-hidden ${spanClass}`}
+                >
+                  {/* Large Number Watermark */}
+                  <div className="absolute -right-4 -top-8 text-[8rem] font-heading font-extrabold text-white/[0.02] group-hover:text-brand/[0.05] transition-colors duration-500 select-none pointer-events-none">
+                    0{idx + 1}
+                  </div>
+                  
+                  <div className="text-brand font-heading font-bold text-xl mb-8 flex items-center gap-4">
+                    <span className="w-12 h-px bg-brand/50 block group-hover:w-16 transition-all duration-500" /> 0{idx + 1}
+                  </div>
+                  <h3 className="text-3xl font-bold uppercase tracking-tight mb-4 relative z-10">{step.title}</h3>
+                  <p className="text-white/50 text-lg font-medium leading-relaxed relative z-10">{step.desc}</p>
+                </motion.div>
+              )
+            })}
           </div>
-          <div className="mt-16">
+
+          <div className="mt-12 md:hidden">
             <Link href="/how-we-work">
-              <Button className="bg-black text-white hover:bg-black/80 px-8 py-5 text-sm rounded-full font-bold tracking-wide hover:scale-105 transition-all">
+              <Button className="w-full bg-white text-black hover:bg-white/90 px-8 py-6 text-sm rounded-full font-bold tracking-wide">
                 See The Full Process
               </Button>
             </Link>

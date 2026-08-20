@@ -47,7 +47,7 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
 
           {/* Logo */}
           <Link
@@ -57,9 +57,9 @@ export function Navbar() {
             <Image
               src="/logo-removebg-preview.png"
               alt="No Books University"
-              width={400}
-              height={140}
-              className="h-20 md:h-28 w-auto object-contain"
+              width={600}
+              height={210}
+              className="h-16 md:h-20 w-auto object-contain scale-[1.5] md:scale-[2.2] origin-left"
               priority
             />
           </Link>

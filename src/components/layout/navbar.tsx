@@ -1,7 +1,6 @@
 "use client"
 import * as React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 
@@ -52,16 +51,11 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="hover:opacity-80 transition-opacity duration-300 z-10 shrink-0"
+            className="hover:opacity-80 transition-opacity duration-300 z-10 shrink-0 flex items-center"
           >
-            <Image
-              src="/logo-no-bg.png"
-              alt="No Books University"
-              width={220}
-              height={76}
-              className="h-14 w-auto object-contain"
-              priority
-            />
+            <span className="text-xl md:text-2xl font-extrabold text-white tracking-wider whitespace-nowrap">
+              NO BOOKS UNIVERSITY
+            </span>
           </Link>
 
           {/* Desktop Nav */}

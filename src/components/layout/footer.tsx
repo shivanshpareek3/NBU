@@ -13,7 +13,7 @@ export function Footer() {
                 alt="No Books University"
                 width={400}
                 height={140}
-                className="h-28 md:h-36 w-auto object-contain"
+                className="h-28 md:h-36 w-auto object-contain scale-[1.3] md:scale-[1.6] origin-left"
               />
             </Link>
             <p className="text-white/60 text-sm max-w-sm leading-relaxed">

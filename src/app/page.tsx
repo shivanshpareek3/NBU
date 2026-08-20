@@ -57,10 +57,28 @@ const HERO_IMAGES = [
 
 function ExpandableImages({ autoExpand }: { autoExpand: boolean }) {
   const [hovered, setHovered] = useState(false)
-  const expanded = hovered || autoExpand
+  const [scrolled, setScrolled] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    
+    checkMobile()
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    window.addEventListener("resize", checkMobile, { passive: true })
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", checkMobile)
+    }
+  }, [])
+
+  // Expand if hovered, autoExpand is true, OR if the user scrolls (crucial for mobile)
+  const expanded = hovered || autoExpand || scrolled
 
   // Per-image positions when expanded
-  const EX = [-240, -120, 0, 120, 240]
+  // Use a tighter spread on mobile so they don't overflow the screen
+  const EX = isMobile ? [-110, -55, 0, 55, 110] : [-240, -120, 0, 120, 240]
   const EY = [12,   -8,  0,  -8,  12]
   const ER = [-8,   -4,  0,   4,   8]
 
@@ -115,7 +133,7 @@ function ExpandableImages({ autoExpand }: { autoExpand: boolean }) {
             transition={{ duration: 0.3 }}
             className="absolute -bottom-8 text-[10px] tracking-[0.2em] uppercase text-white/25 font-bold whitespace-nowrap pointer-events-none"
           >
-            hover to explore
+            {isMobile ? "scroll to explore" : "hover to explore"}
           </motion.span>
         )}
       </AnimatePresence>

@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export function Preloader() {
   const [progress, setProgress] = React.useState(0)
@@ -69,9 +70,16 @@ export function Preloader() {
               />
             </svg>
             
-            {/* Percentage Text */}
+            {/* Logo instead of Percentage */}
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-3xl font-heading font-bold text-black">{progress}%</span>
+              <Image 
+                src="/logo-removebg-preview.png"
+                alt="Logo"
+                width={120}
+                height={50}
+                className="w-[80%] h-auto object-contain invert"
+                priority
+              />
             </div>
           </div>
         </motion.div>

@@ -59,7 +59,7 @@ export function Navbar() {
               alt="No Books University"
               width={600}
               height={210}
-              className="h-16 md:h-20 w-auto object-contain scale-[1.8] md:scale-[2.8] origin-left"
+              className="h-16 md:h-20 w-auto object-contain scale-[1.8] md:scale-[2.8] origin-left translate-y-2 md:translate-y-4"
               priority
             />
           </Link>

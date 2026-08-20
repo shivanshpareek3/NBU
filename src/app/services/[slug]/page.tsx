@@ -19,7 +19,7 @@ const getServiceImage = (slug: string) => {
     "business-systems": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2850&q=80",
     "sop-process-setup": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2850&q=80",
     "marketing-department-setup": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2850&q=80",
-    "sales-department-setup": "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&w=2850&q=80",
+    "sales-department-setup": "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=2850&q=80",
     "hiring-team-setup": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2850&q=80",
     "operations-setup": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2850&q=80",
     "leadership-accountability": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2850&q=80",

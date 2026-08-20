@@ -29,7 +29,7 @@ export default function CaseStudiesPage() {
       problem: "Sales were unpredictable. The founder was the only one capable of closing deals, creating a massive single point of failure.",
       system: "Built a structured Sales Department from scratch. Hired, trained, and installed 3 dedicated closers with strict scripts and KPIs.",
       outcome: "Generated $2M in additional revenue in 12 months with the founder entirely removed from sales calls.",
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&w=1600&q=80",
+      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80",
     }
   ]
 

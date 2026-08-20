@@ -32,7 +32,7 @@ export function Preloader() {
   }, [])
 
   // Calculate SVG dash offset
-  const radius = 70
+  const radius = 90
   const circumference = 2 * Math.PI * radius
   const strokeDashoffset = circumference - (progress / 100) * circumference
 
@@ -48,18 +48,18 @@ export function Preloader() {
         >
           <div className="relative flex items-center justify-center">
             {/* SVG Progress Circle */}
-            <svg width="160" height="160" className="transform -rotate-90">
+            <svg width="220" height="220" className="transform -rotate-90">
               <circle
-                cx="80"
-                cy="80"
+                cx="110"
+                cy="110"
                 r={radius}
                 className="stroke-black/10"
                 strokeWidth="4"
                 fill="none"
               />
               <motion.circle
-                cx="80"
-                cy="80"
+                cx="110"
+                cy="110"
                 r={radius}
                 className="stroke-brand"
                 strokeWidth="4"
@@ -75,9 +75,9 @@ export function Preloader() {
               <Image 
                 src="/logo-removebg-preview.png"
                 alt="Logo"
-                width={120}
-                height={50}
-                className="w-[80%] h-auto object-contain invert"
+                width={240}
+                height={100}
+                className="w-[120%] h-auto object-contain invert scale-[1.3]"
                 priority
               />
             </div>

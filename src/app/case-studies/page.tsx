@@ -40,7 +40,7 @@ export default function CaseStudiesPage() {
       {/* 01 - HERO SECTION */}
       <section className="relative pt-40 pb-32 lg:pt-56 lg:pb-32 bg-[#030303] flex flex-col justify-center overflow-hidden">
         <div className="container mx-auto px-6 relative z-10 w-full flex flex-col items-center text-center max-w-7xl">
-          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}>
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
             <div className="font-semibold tracking-[0.2em] uppercase text-brand mb-6 text-sm md:text-base">Results</div>
             <h1 className="text-4xl md:text-8xl lg:text-[9rem] font-heading font-extrabold leading-[0.9] tracking-tighter text-white mb-8 uppercase">
               The <span className="text-white/40">Proof.</span>
@@ -62,7 +62,7 @@ export default function CaseStudiesPage() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className={`flex flex-col gap-12 lg:gap-24 ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
               >
                 

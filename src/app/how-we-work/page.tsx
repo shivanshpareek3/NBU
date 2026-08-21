@@ -75,7 +75,7 @@ export default function HowWeWorkPage() {
                     initial={{ opacity: 0, scale: 0.9 }} 
                     whileInView={{ opacity: 1, scale: 1 }} 
                     viewport={{ once: true, margin: "-20%" }} 
-                    transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                     className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden"
                   >
                     <Image src={step.image} alt={step.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" />
@@ -88,7 +88,7 @@ export default function HowWeWorkPage() {
                     initial={{ opacity: 0, x: idx % 2 === 1 ? -50 : 50 }} 
                     whileInView={{ opacity: 1, x: 0 }} 
                     viewport={{ once: true, margin: "-20%" }} 
-                    transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                   >
                     <div className="text-brand font-heading font-bold text-5xl md:text-8xl mb-8 opacity-50">
                       {step.id}

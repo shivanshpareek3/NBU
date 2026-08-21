@@ -34,7 +34,7 @@ export default function ServicesPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-3 mb-8">
@@ -53,7 +53,7 @@ export default function ServicesPage() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 text-base md:text-lg text-white/50 font-medium max-w-xl leading-relaxed"
             >
               We don't sell consulting hours. We install exact operating departments, teams, and accountability structures required to scale.
@@ -76,7 +76,7 @@ export default function ServicesPage() {
                 key={idx}
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 + idx * 0.07, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.4, delay: 0.05 + idx * 0.05, ease: [0.16, 1, 0.3, 1] }}
                 className="group relative border-b border-white/10 cursor-pointer"
                 onMouseEnter={() => setHoveredIndex(idx)}
                 onMouseLeave={() => setHoveredIndex(null)}

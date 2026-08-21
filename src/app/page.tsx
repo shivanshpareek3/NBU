@@ -387,17 +387,17 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           04 · WHAT WE BUILD — sticky, pushes over shift
       ══════════════════════════════════════════ */}
-      <section className="sticky top-0 z-[40] min-h-screen flex items-center bg-[#030303] py-24">
+      <section className="sticky top-0 z-[40] min-h-screen flex items-center bg-[#030303] py-12 md:py-16">
         <div className="container mx-auto px-6 max-w-7xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-150px" }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-16"
+            className="mb-8 md:mb-10"
           >
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold uppercase tracking-tight">What We Build</h2>
-            <p className="text-lg mt-4 text-white/45 max-w-2xl">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold uppercase tracking-tight">What We Build</h2>
+            <p className="text-base md:text-lg mt-2 md:mt-4 text-white/45 max-w-2xl">
               The complete operational infrastructure required to detach the founder from day-to-day execution.
             </p>
           </motion.div>
@@ -413,12 +413,12 @@ export default function Home() {
               >
                 <Link
                   href={`/services/${service.slug}`}
-                  className="group flex items-center justify-between gap-8 border-b border-white/10 py-7 hover:bg-white/[0.02] transition-colors duration-300"
+                  className="group flex items-center justify-between gap-6 border-b border-white/10 py-4 md:py-5 hover:bg-white/[0.02] transition-colors duration-300"
                 >
-                  <div className="flex items-center gap-8 min-w-0">
+                  <div className="flex items-center gap-6 min-w-0">
                     <span className="text-sm font-bold text-white/20 font-heading w-8 shrink-0">0{idx + 1}</span>
                     <div>
-                      <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold uppercase text-white group-hover:text-brand transition-colors duration-300 tracking-tight">{service.title}</h3>
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-heading font-bold uppercase text-white group-hover:text-brand transition-colors duration-300 tracking-tight">{service.title}</h3>
                       <p className="mt-1 text-sm text-white/40 max-w-lg group-hover:text-white/65 transition-colors duration-300">{service.shortDescription}</p>
                     </div>
                   </div>

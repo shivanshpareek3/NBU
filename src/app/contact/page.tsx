@@ -44,7 +44,7 @@ export default function ContactPage() {
       <section className="relative pt-40 pb-32 lg:pt-56 lg:pb-32 bg-[#030303] flex flex-col justify-center overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 z-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none mix-blend-overlay" />
         <div className="container mx-auto px-6 relative z-10 w-full flex flex-col items-start max-w-7xl">
-          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}>
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
             <div className="font-semibold tracking-[0.2em] uppercase text-brand mb-6 text-sm md:text-base border-l-2 border-brand pl-4">Consultation</div>
             <h1 className="text-5xl md:text-8xl lg:text-[9rem] font-heading font-extrabold leading-[0.9] tracking-tighter text-white mb-8 uppercase">
               LET'S BUILD <br/>
@@ -63,7 +63,7 @@ export default function ContactPage() {
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4 }}
               className="w-full lg:w-1/3 space-y-16"
             >
               <div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="w-full lg:w-2/3"
             >
               <div className="bg-[#0a0a0a] p-8 md:p-16 rounded-[2rem] border border-white/10 shadow-2xl relative overflow-hidden">

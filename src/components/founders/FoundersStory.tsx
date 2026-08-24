@@ -1,45 +1,94 @@
+"use client";
+
 import React from "react";
 import { ArrowDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function FoundersStory() {
+  const listItems = [
+    "More people.",
+    "More clients.",
+    "More decisions.",
+    "More departments.",
+    "More processes.",
+    "More responsibilities.",
+  ];
+
   return (
-    <section className="py-24 md:py-32 border-b border-white/10">
-      <div className="container mx-auto px-6">
+    <section className="py-24 md:py-40 border-b border-white/5 relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-sm font-bold tracking-[0.2em] text-brand uppercase mb-8">
-            WHY WE BUILT NO BOOKS UNIVERSITY.
-          </h2>
+          <motion.h2 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="text-xs font-bold tracking-[0.25em] text-brand uppercase mb-12 flex items-center gap-4"
+          >
+            <span className="w-12 h-px bg-brand/50"></span>
+            WHY WE BUILT NO BOOKS UNIVERSITY
+          </motion.h2>
           
-          <div className="space-y-8 text-xl md:text-3xl font-medium text-white/80 leading-relaxed mb-16">
-            <p>As founder-led businesses grow, complexity increases.</p>
-            <div className="flex flex-wrap gap-4 text-white font-bold">
-              <span>More people.</span>
-              <span>More clients.</span>
-              <span>More decisions.</span>
-              <span>More departments.</span>
-              <span>More processes.</span>
-              <span>More responsibilities.</span>
+          <div className="space-y-12 text-2xl md:text-4xl lg:text-5xl font-heading font-extrabold uppercase leading-[1.1] tracking-tight text-white/80 mb-20 text-balance">
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              As founder-led businesses grow, complexity increases.
+            </motion.p>
+            
+            <div className="flex flex-wrap gap-x-6 gap-y-4 text-white font-bold">
+              {listItems.map((item, i) => (
+                <motion.span 
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.1 }}
+                  className="bg-white/5 px-4 py-2 rounded-sm border border-white/10 text-xl md:text-2xl"
+                >
+                  {item}
+                </motion.span>
+              ))}
             </div>
-            <p>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-brand"
+            >
               Without proper systems, the founder becomes the operating system.
-            </p>
+            </motion.p>
           </div>
 
-          <div className="flex flex-col items-center justify-center py-16 border border-white/10 bg-white/[0.02] rounded-3xl relative overflow-hidden group">
-            <h3 className="text-4xl md:text-6xl font-heading font-extrabold uppercase tracking-tight text-white/50 mb-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center justify-center py-20 border border-white/10 bg-white/[0.02] rounded-sm relative overflow-hidden group hover:border-brand/30 transition-colors duration-700"
+          >
+            <h3 className="text-4xl md:text-7xl lg:text-8xl font-heading font-extrabold uppercase tracking-tighter text-white/20 mb-8 transition-colors duration-700 group-hover:text-white/40">
               FOUNDER-DEPENDENT
             </h3>
             
-            <div className="w-16 h-16 rounded-full bg-brand/20 flex items-center justify-center mb-8 text-brand group-hover:translate-y-2 transition-transform duration-500">
+            <motion.div 
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="w-20 h-20 rounded-full bg-[#030303] border border-white/10 flex items-center justify-center mb-8 text-brand relative z-10 shadow-[0_0_30px_rgba(59,130,246,0.15)] group-hover:shadow-[0_0_50px_rgba(59,130,246,0.3)] transition-shadow duration-700"
+            >
               <ArrowDown className="w-8 h-8" />
-            </div>
+            </motion.div>
             
-            <h3 className="text-5xl md:text-8xl font-heading font-extrabold uppercase tracking-tight text-brand">
+            <h3 className="text-5xl md:text-8xl lg:text-9xl font-heading font-extrabold uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 group-hover:from-brand group-hover:to-brand/50 transition-all duration-700">
               SYSTEM-DRIVEN
             </h3>
             
-            <div className="absolute inset-0 bg-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-          </div>
+            <div className="absolute inset-0 bg-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none blur-3xl" />
+          </motion.div>
         </div>
       </div>
     </section>

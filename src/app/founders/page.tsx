@@ -3,16 +3,15 @@ import { Metadata } from "next";
 import { FounderHero } from "@/components/founders/FounderHero";
 import { FounderIntro } from "@/components/founders/FounderIntro";
 import { FounderProfile } from "@/components/founders/FounderProfile";
-import { FoundersTogether } from "@/components/founders/FoundersTogether";
 import { FounderPhilosophy } from "@/components/founders/FounderPhilosophy";
 import { FoundersStory } from "@/components/founders/FoundersStory";
 import { FounderServices } from "@/components/founders/FounderServices";
 import { FoundersCTA } from "@/components/founders/FoundersCTA";
 
 export const metadata: Metadata = {
-  title: "Founders | No Books University",
+  title: "Founder | No Books University",
   description:
-    "Meet the people behind No Books University and the philosophy driving our approach to building structured, system-driven businesses.",
+    "Meet the founder behind No Books University and the philosophy driving our approach to building structured, system-driven businesses.",
 };
 
 export default function FoundersPage() {
@@ -21,8 +20,6 @@ export default function FoundersPage() {
       <FounderHero />
       <FounderIntro />
       <FounderProfile founderId="arpit" align="left" />
-      <FounderProfile founderId="yashvardhan" align="right" />
-      <FoundersTogether />
       <FounderPhilosophy />
       <FoundersStory />
       <FounderServices />

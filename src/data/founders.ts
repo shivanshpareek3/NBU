@@ -4,7 +4,7 @@ export const foundersData = {
       id: "arpit",
       name: "Arpit Sharma",
       role: "Founder",
-      image: "/images/founders/arpit-sharma.svg",
+      image: "/images/founders/arpit-sharma.png",
       bio: {
         heading: "ABOUT ARPIT",
         paragraphs: [
@@ -21,34 +21,6 @@ export const foundersData = {
         systemsThinking: "",
         roleInsideNBU: "",
       },
-    },
-    {
-      id: "yashvardhan",
-      name: "Yashvardhan Singh",
-      role: "Co-Founder",
-      image: "/images/founders/yashvardhan-singh.svg",
-      bio: {
-        heading: "ABOUT YASHVARDHAN",
-        paragraphs: [
-          // Content to be provided by client
-          "",
-          "",
-        ],
-      },
-      roleSection: {
-        heading: "TURNING STRATEGY INTO STRUCTURE.",
-        vision: "",
-        leadershipPhilosophy: "",
-        businessApproach: "",
-        areaOfExpertise: "",
-        roleInsideNBU: "",
-      },
-    },
-  ],
-  together: {
-    heading: "TWO MINDS. ONE MISSION.",
-    image: "/images/founders/founders-together.svg",
-    supportingMessage:
-      "Build businesses that are structured enough to operate, teams strong enough to execute and systems clear enough to scale.",
-  },
+    }
+  ]
 };

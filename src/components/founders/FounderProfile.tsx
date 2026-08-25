@@ -86,7 +86,7 @@ export function FounderProfile({ founderId, align = "left" }: FounderProfileProp
               transition={{ delay: 0.5, duration: 0.8 }}
               className={`absolute bottom-8 ${isLeft ? '-right-12' : '-left-12'} hidden md:flex items-center gap-4 bg-black/60 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-xl`}
             >
-              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-brand/30 overflow-hidden relative p-1">
+              <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center border border-brand/30 overflow-hidden relative p-1">
                 <Image
                   src="/logo-no-bg.png"
                   alt="NBU Logo"

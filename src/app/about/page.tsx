@@ -129,7 +129,34 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 05 - WHY NO BOOKS UNIVERSITY & STRUCTURE (Dark Grid Layout) */}
+      {/* 05 - OUR APPROACH (Dark Editorial) */}
+      <section className="py-32 md:py-48 bg-[#0a0a0a]">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <motion.div {...fadeInUp}>
+              <div className="relative aspect-[16/9] md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden group">
+                <img 
+                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80" 
+                  alt="Strategy meeting" 
+                  className="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" 
+                />
+                <div className="absolute inset-0 bg-brand/10 mix-blend-overlay" />
+              </div>
+            </motion.div>
+            <motion.div {...fadeInUp} className="pl-0 md:pl-16">
+              <h2 className="text-4xl md:text-6xl font-heading font-bold uppercase mb-8">Our Approach</h2>
+              <p className="text-2xl text-white/70 leading-relaxed mb-12">
+                We don't just give advice. We act as your integration partners. We dive deep into your operations, identify the critical bottlenecks, and build the infrastructure required to solve them alongside your team.
+              </p>
+              <Button size="lg" asChild className="bg-brand text-white hover:bg-brand-dark px-10 py-7 text-lg rounded-full font-bold transition-all hover:scale-105">
+                <Link href="/how-we-work">See How We Work</Link>
+              </Button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* 06 - WHY NO BOOKS UNIVERSITY & STRUCTURE (Dark Grid Layout) */}
       <section className="py-32 md:py-40 bg-[#0a0a0a]">
         <div className="container mx-auto px-6 max-w-7xl">
           

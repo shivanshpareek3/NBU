@@ -70,7 +70,7 @@ export function FounderHero() {
             className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading font-medium tracking-tight leading-[1.05] text-white mb-8 text-balance"
           >
             Building businesses that <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cyan-400 font-semibold italic">don&apos;t depend</span> on their founders.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cyan-400 font-semibold italic pr-2 pl-1">don&apos;t depend</span> on their founders.
           </motion.h1>
 
           <motion.p
@@ -105,16 +105,6 @@ export function FounderHero() {
           </motion.div>
         </div>
       </div>
-
-      {/* Parallax Floating Glass Elements */}
-      <motion.div 
-        style={{ y: y1, opacity }} 
-        className="absolute left-[10%] top-[25%] w-24 h-24 rounded-2xl bg-gradient-to-br from-brand/20 to-transparent border border-white/10 backdrop-blur-xl rotate-12 hidden lg:block pointer-events-none shadow-2xl" 
-      />
-      <motion.div 
-        style={{ y: y2, opacity }} 
-        className="absolute right-[12%] top-[45%] w-32 h-32 rounded-full bg-gradient-to-tr from-cyan-500/20 to-transparent border border-white/10 backdrop-blur-xl -rotate-12 hidden lg:block pointer-events-none shadow-2xl" 
-      />
     </section>
   );
 }

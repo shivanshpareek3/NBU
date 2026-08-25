@@ -77,7 +77,7 @@ export default function AboutPage() {
             <motion.div {...fadeInUp} className="lg:w-5/12 w-full order-2 lg:order-1">
               <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-brand/10 border border-white/5 group">
                 <img 
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee3c?auto=format&fit=crop&w=1600&q=80" 
+                  src="/images/about/boardroom.jpg" 
                   alt="Professional boardroom" 
                   className="w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-700 ease-in-out" 
                 />

@@ -65,52 +65,63 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 04 - WHO WE WORK WITH (Light Section for Contrast) */}
-      <section className="py-32 md:py-48 bg-white text-black relative overflow-hidden">
+      {/* 04 - WHO WE WORK WITH (Premium Dark Section) */}
+      <section className="py-32 md:py-48 bg-[#050505] relative overflow-hidden">
+        {/* Subtle grid background */}
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-5"></div>
+        
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
-          <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-24 items-center">
+          <div className="flex flex-col lg:flex-row gap-20 lg:gap-32 items-center">
             
-            <motion.div {...fadeInUp} className="lg:w-1/2">
-              <h2 className="text-5xl md:text-7xl font-heading font-bold uppercase leading-[1.1] mb-12">
-                Who We <br/><span className="text-brand">Work With</span>
-              </h2>
-              <p className="text-2xl text-black/80 leading-relaxed mb-10 font-medium">
-                We work with founder-led service businesses that meet a specific bar:
-              </p>
-              <ul className="space-y-6 mb-12">
-                <li className="flex items-start">
-                  <span className="text-brand mr-4 mt-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  </span>
-                  <span className="text-xl text-black/70 font-medium">Monthly revenue of ₹5 lakh or more.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-brand mr-4 mt-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  </span>
-                  <span className="text-xl text-black/70 font-medium">An average ticket size of ₹50,000 or more per client.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-brand mr-4 mt-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  </span>
-                  <span className="text-xl text-black/70 font-medium">A founder or leadership team ready to be hands-on during installation — this is not a hands-off, set-and-forget service.</span>
-                </li>
-              </ul>
-              
-              <div className="bg-black/5 p-8 border-l-4 border-black">
-                <p className="text-lg text-black/80 leading-relaxed font-medium mb-4">
-                  We <span className="font-bold underline decoration-brand decoration-2 underline-offset-4">do not</span> work with coaches, course creators, or infopreneurs. Our system is built for businesses that deliver a real service to real clients at a real price — interior design studios, marketing and creative agencies, IT and AI services firms, event companies, recruitment firms, and businesses of a similar shape.
-                </p>
-                <p className="text-lg text-black/80 leading-relaxed font-medium">
-                  If you're not sure whether your business fits, the 1-1 session is exactly where we figure that out together, honestly — including telling you if we're not the right fit, before you spend anything beyond the session fee.
-                </p>
+            {/* Image side - using img tag for reliability */}
+            <motion.div {...fadeInUp} className="lg:w-5/12 w-full order-2 lg:order-1">
+              <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-brand/10 border border-white/5 group">
+                <img 
+                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee3c?auto=format&fit=crop&w=1600&q=80" 
+                  alt="Professional boardroom" 
+                  className="w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-700 ease-in-out" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               </div>
             </motion.div>
 
-            <motion.div {...fadeInUp} className="lg:w-1/2 w-full">
-              <div className="relative aspect-[4/5] w-full max-w-lg mx-auto overflow-hidden">
-                <Image src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&w=1600&q=80" alt="Professional service" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover grayscale contrast-125" />
+            {/* Content side */}
+            <motion.div {...fadeInUp} className="lg:w-7/12 order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand/30 bg-brand/10 mb-8">
+                <span className="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+                <span className="text-brand text-xs font-semibold tracking-widest uppercase">Client Criteria</span>
+              </div>
+              
+              <h2 className="text-5xl md:text-7xl font-heading font-bold uppercase leading-[1.1] mb-10">
+                Who We <br/><span className="text-white/40">Work With</span>
+              </h2>
+              
+              <p className="text-2xl text-white/80 leading-relaxed mb-12 font-light">
+                We work with founder-led service businesses that meet a specific bar:
+              </p>
+              
+              <ul className="space-y-6 mb-16">
+                {[
+                  "Monthly revenue of ₹5 lakh or more.",
+                  "An average ticket size of ₹50,000 or more per client.",
+                  "A founder or leadership team ready to be hands-on during installation — this is not a hands-off, set-and-forget service."
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start bg-[#0a0a0a] p-6 rounded-xl border border-white/5">
+                    <span className="text-brand mr-5 mt-1 flex-shrink-0">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                    <span className="text-xl text-white/70 font-light leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <div className="bg-[#111] p-10 rounded-2xl border-l-4 border-brand">
+                <p className="text-lg text-white/80 leading-relaxed font-light mb-6">
+                  We <span className="font-medium underline decoration-brand decoration-2 underline-offset-4">do not</span> work with coaches, course creators, or infopreneurs. Our system is built for businesses that deliver a real service to real clients at a real price — interior design studios, marketing and creative agencies, IT and AI services firms, event companies, recruitment firms, and businesses of a similar shape.
+                </p>
+                <p className="text-lg text-white/80 leading-relaxed font-light">
+                  If you're not sure whether your business fits, the 1-1 session is exactly where we figure that out together, honestly — including telling you if we're not the right fit, before you spend anything beyond the session fee.
+                </p>
               </div>
             </motion.div>
             

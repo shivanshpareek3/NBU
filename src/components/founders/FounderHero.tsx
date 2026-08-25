@@ -69,8 +69,8 @@ export function FounderHero() {
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading font-medium tracking-tight leading-[1.05] text-white mb-8 text-balance"
           >
-            Building businesses that <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cyan-400 font-semibold italic pr-2 pl-1">don&apos;t depend</span> on their founders.
+            Meet the founders <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cyan-400 font-semibold italic pr-2 pl-1">behind</span> No Books University.
           </motion.h1>
 
           <motion.p

@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     // Send email to founder
     await resend.emails.send({
       from: "No Books University <noreply@nobooksuniversity.com>", // Typically you need a verified domain in Resend
-      to: "anurag.founder'soffice@foremostleads.in",
+      to: "nobooksuniversity@gmail.com",
       subject: `New No Books University Enquiry — ${service}`,
       html: `
         <h2>New Enquiry</h2>

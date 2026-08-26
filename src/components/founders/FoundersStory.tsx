@@ -69,22 +69,22 @@ export function FoundersStory() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center justify-center py-20 border border-white/10 bg-white/[0.02] rounded-sm relative overflow-hidden group hover:border-brand/30 transition-colors duration-700"
+            className="flex flex-col md:flex-row items-center justify-center py-20 px-4 md:px-8 border border-white/10 bg-white/[0.02] rounded-sm relative overflow-hidden group hover:border-brand/30 transition-colors duration-700"
           >
-            <h3 className="text-4xl md:text-7xl lg:text-8xl font-heading font-extrabold uppercase tracking-tighter text-white/20 mb-8 transition-colors duration-700 group-hover:text-white/40">
-              FOUNDER-DEPENDENT
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold uppercase tracking-tighter text-white/20 mb-8 md:mb-0 text-center transition-colors duration-700 group-hover:text-white/40">
+              FOUNDER<br className="hidden lg:block"/>-DEPENDENT
             </h3>
             
             <motion.div 
-              animate={{ y: [0, 10, 0] }}
+              animate={{ x: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="w-20 h-20 rounded-full bg-[#030303] border border-white/10 flex items-center justify-center mb-8 text-brand relative z-10 shadow-[0_0_30px_rgba(59,130,246,0.15)] group-hover:shadow-[0_0_50px_rgba(59,130,246,0.3)] transition-shadow duration-700"
+              className="w-16 h-16 md:w-20 md:h-20 shrink-0 rounded-full bg-[#030303] border border-white/10 flex items-center justify-center my-8 md:my-0 md:mx-8 lg:mx-12 text-brand relative z-10 shadow-[0_0_30px_rgba(59,130,246,0.15)] group-hover:shadow-[0_0_50px_rgba(59,130,246,0.3)] transition-shadow duration-700"
             >
-              <ArrowDown className="w-8 h-8" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 md:w-8 md:h-8 rotate-90 md:rotate-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </motion.div>
             
-            <h3 className="text-5xl md:text-8xl lg:text-9xl font-heading font-extrabold uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 group-hover:from-brand group-hover:to-brand/50 transition-all duration-700">
-              SYSTEM-DRIVEN
+            <h3 className="text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 group-hover:from-brand group-hover:to-brand/50 transition-all duration-700 text-center">
+              SYSTEM<br className="hidden lg:block"/>-DRIVEN
             </h3>
             
             <div className="absolute inset-0 bg-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none blur-3xl" />

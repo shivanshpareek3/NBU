@@ -147,23 +147,6 @@ export function FounderProfile({ founderId, align = "left" }: FounderProfileProp
                 </div>
               </motion.div>
 
-              {/* Role Section */}
-              <motion.div
-                variants={blurReveal}
-                className="relative pl-8 border-l border-white/10 hover:border-cyan-400/50 transition-colors duration-500 group"
-              >
-                {/* Glowing Dot on Line */}
-                <div className="absolute top-0 -left-[5px] w-2.5 h-2.5 rounded-full bg-cyan-400/50 shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:scale-150 transition-transform duration-300" />
-                
-                <h4 className="text-sm font-semibold tracking-widest text-white/50 uppercase mb-6">
-                  {founder.roleSection.heading}
-                </h4>
-                <div className="space-y-6 text-white/70 leading-relaxed text-lg font-light">
-                  <p className="hover:text-white transition-colors duration-300">
-                    {founder.roleSection.vision || `[Editable vision/role description for ${founder.name}. Describe leadership philosophy, business approach, and specific focus areas inside No Books University.]`}
-                  </p>
-                </div>
-              </motion.div>
             </motion.div>
           </motion.div>
         </div>

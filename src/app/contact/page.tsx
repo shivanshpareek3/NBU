@@ -79,12 +79,6 @@ export default function ContactPage() {
                     anurag.founder'soffice@<br/>foremostleads.in
                   </a>
                 </div>
-                <div>
-                  <h3 className="font-semibold uppercase tracking-[0.2em] text-sm text-brand mb-4">Direct Phone</h3>
-                  <a href="tel:+916350291420" className="text-2xl md:text-3xl font-heading font-bold hover:text-brand transition-colors">
-                    +91 6350291420
-                  </a>
-                </div>
               </div>
             </motion.div>
 

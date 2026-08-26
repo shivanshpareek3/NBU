@@ -53,11 +53,6 @@ export function Footer() {
                   anurag.founder&apos;soffice@foremostleads.in
                 </a>
               </li>
-              <li>
-                <a href="tel:+916350291420" className="text-sm hover:text-brand transition-colors">
-                  +91 6350291420
-                </a>
-              </li>
             </ul>
           </div>
         </div>

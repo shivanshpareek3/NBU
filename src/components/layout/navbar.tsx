@@ -15,7 +15,7 @@ export function Navbar() {
     { href: "/services", label: "What We Build" },
     { href: "/how-we-work", label: "How We Work" },
     { href: "/about", label: "About" },
-    { href: "/founders", label: "Founders" },
+    { href: "/founders", label: "Founder" },
     { href: "/case-studies", label: "Case Studies" },
     { href: "/contact", label: "Contact" },
   ]

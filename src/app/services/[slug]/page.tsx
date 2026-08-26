@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
         </div>
       </section>
-
+      
       {/* 04 - THE PROCESS & OUTCOMES (Asymmetric Split) */}
       <section className="py-32 bg-white text-black">
         <div className="container mx-auto px-6 max-w-7xl">

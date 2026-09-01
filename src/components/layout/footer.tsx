@@ -53,6 +53,13 @@ export function Footer() {
                   nobooksuniversity@gmail.com
                 </a>
               </li>
+              <li>
+                <address className="not-italic text-sm text-white/60 leading-relaxed">
+                  B-26, SHIVPURI COLONY, <br />
+                  AIRPORT ROAD, SANGANER, <br />
+                  Jaipur, Rajasthan, 302029
+                </address>
+              </li>
             </ul>
           </div>
         </div>

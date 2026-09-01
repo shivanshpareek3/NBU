@@ -75,7 +75,7 @@ const TiltCard = ({ founder, index }: { founder: any; index: number }) => {
           {founder.name}
         </div>
         <div className="text-sm font-bold tracking-[0.25em] text-white/50 uppercase">
-          — {founder.role}
+          {founder.role}
         </div>
         <div className="w-12 h-1 bg-brand/50 mt-4 rounded-full group-hover:w-24 group-hover:bg-brand transition-all duration-500" />
       </div>

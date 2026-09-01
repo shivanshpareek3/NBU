@@ -141,7 +141,7 @@ export default function ContactPage() {
                         {SERVICES.map(s => (
                           <option key={s.id} value={s.title}>{s.title}</option>
                         ))}
-                        <option value="General Enquiry">General Audit</option>
+                        <option value="Not Sure / General Enquiry">Not Sure / General Enquiry</option>
                       </select>
                     </div>
 
@@ -153,7 +153,7 @@ export default function ContactPage() {
                     {error && <p className="text-red-500 text-sm font-medium bg-red-500/10 p-4 rounded-lg">{error}</p>}
 
                     <Button type="submit" disabled={isSubmitting} className="w-full h-16 text-xl font-bold bg-white text-black hover:bg-white/90 rounded-full transition-all hover:scale-[1.02]">
-                      {isSubmitting ? "Submitting Application..." : "Submit Application"}
+                      {isSubmitting ? "Sending..." : "Get in Touch"}
                     </Button>
                   </form>
                 )}

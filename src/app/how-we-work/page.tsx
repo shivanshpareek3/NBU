@@ -117,7 +117,7 @@ export default function HowWeWorkPage() {
           <p className="text-lg md:text-2xl text-black/60 mb-12 max-w-3xl font-medium">
             Get in touch to discuss your current bottlenecks and how our methodology can reconstruct your operations.
           </p>
-          <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 px-12 py-8 text-xl rounded-full font-bold shadow-[0_0_50px_rgba(255,255,255,0.1)] hover:scale-105 transition-all">
+          <Button size="lg" asChild className="bg-black text-white hover:bg-black/90 px-12 py-8 text-xl rounded-full font-bold shadow-2xl hover:scale-105 transition-all">
             <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>

@@ -331,7 +331,7 @@ export default function TermsPage() {
           17.7 Force majeure. Neither party is liable for failure or delay caused by events beyond its reasonable control, including natural disaster, epidemic, war, civil unrest, governmental action, strike, failure of telecommunications or internet infrastructure, or failure of a third-party platform. Where such an event continues for more than sixty days, either party may terminate on written notice, and we will refund any amount paid for services not yet provided.
         </p>
         <p>
-          17.8 Notices. Notices to us must be sent to [LEGAL EMAIL] and to B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029. Notices to you will be sent to the email address you provided. Email notices are deemed received on the next business day.
+          17.8 Notices. Notices to us must be sent to nobooksuniversity@gmail.com and to B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029. Notices to you will be sent to the email address you provided. Email notices are deemed received on the next business day.
         </p>
         <p>
           17.9 Relationship. Nothing creates a partnership, joint venture, agency, franchise or employment relationship between the parties. Neither party may bind the other.
@@ -347,9 +347,8 @@ export default function TermsPage() {
         <p className="font-semibold mt-4">
           No Books University (trading as No Books University)<br />
           B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029<br />
-          Email: [EMAIL]<br />
-          Legal notices: [LEGAL EMAIL]<br />
-          Phone: [PHONE]<br />
+          Email: nobooksuniversity@gmail.com<br />
+          Legal notices: nobooksuniversity@gmail.com<br />
           GSTIN: 08PPQPS3053P1ZL
         </p>
 

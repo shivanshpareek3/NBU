@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
 
         <h2>7. Contact</h2>
         <p>
-          Questions about our use of cookies: [LEGAL EMAIL]
+          Questions about our use of cookies: nobooksuniversity@gmail.com
         </p>
         
         <div className="mt-12 p-6 bg-foreground/5 rounded-xl border border-foreground/10 text-center font-medium">

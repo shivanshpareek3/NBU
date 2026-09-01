@@ -2,89 +2,82 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="flex-1 bg-background pt-24 pb-32">
       <div className="container mx-auto px-6 max-w-4xl prose prose-lg prose-headings:font-heading prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-p:text-foreground/80 prose-li:text-foreground/80">
-        
-        <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Privacy & Cookie Policy</h1>
+        <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Privacy Policy</h1>
         <p className="text-foreground/60 text-lg mb-12">No Books University | Last updated: {new Date().toLocaleDateString()}</p>
         
-        <div className="bg-foreground/5 p-8 rounded-2xl border border-foreground/10 mb-12">
-          <h2 className="!mt-0">Privacy Policy (Summary)</h2>
-          <p>
-            We collect information that you provide directly to us when you fill out a form, request a consultation, or otherwise communicate with us. This may include your name, email address, phone number, and business details. We use this information to provide our services and communicate with you. We do not share, sell, or rent your personal information to third parties, except trusted service providers who assist in operating our business under strict confidentiality.
-          </p>
-        </div>
-
-        <h2 className="text-3xl border-b border-foreground/10 pb-4">Our Cookie Policy</h2>
-        
-        <h2>What Are Cookies?</h2>
+        <h2>Introduction</h2>
         <p>
-          Cookies are small text files placed on your device when you visit a website. They help the website function, remember your preferences, and (for marketing cookies) measure how you interact with ads so we can improve them. This policy also covers similar technologies such as pixels and local storage, collectively referred to as "cookies" below.
+          At No Books University, we respect your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, process, and protect your personal information when you visit our website, use our services, or interact with us.
+        </p>
+        <p>
+          This policy is designed to comply with applicable data protection laws in India, including the Digital Personal Data Protection Act, 2023 (DPDP Act).
         </p>
 
-        <h2>Categories of Cookies We Use</h2>
-        
-        <h3 className="text-xl font-bold mt-8 mb-2">Strictly Necessary Cookies</h3>
-        <p>
-          These are required for the website to function: for example, to keep the payment checkout session alive, or to remember that you completed a form step. These cannot be switched off, because the website will not work properly without them.
-        </p>
-        
-        <h3 className="text-xl font-bold mt-8 mb-2">Performance and Analytics Cookies</h3>
-        <p>
-          These help us understand how visitors use our website (which pages are viewed, how long visitors stay, where they drop off) so we can improve the site. This may include tools such as Google Analytics or equivalent.
-        </p>
-        
-        <h3 className="text-xl font-bold mt-8 mb-2">Marketing and Advertising Cookies</h3>
-        <p>
-          We use these to measure the performance of our advertising and to build audiences for future advertising. This includes the Meta Pixel and Meta Conversions API, which record events (such as page views, form submissions, and purchases) tied to a hashed version of identifiers like your email or phone number where available, so that Meta can attribute ad performance and let us build lookalike or retargeting audiences. It may also include similar tools from Google Ads or other ad platforms we use.
-        </p>
-        
-        <h3 className="text-xl font-bold mt-8 mb-2">Functional Cookies</h3>
-        <p>
-          These remember choices you've made (such as form progress or session preferences) to give you a smoother experience on return visits.
-        </p>
-
-        <h2>Third-Party Cookies</h2>
-        <p>
-          Some cookies are placed by third parties who provide services embedded in our website, including:
-        </p>
+        <h2>Information We Collect</h2>
+        <p>We may collect and process the following categories of personal data:</p>
         <ul>
-          <li><strong>Meta (Facebook/Instagram)</strong>: Pixel and Conversions API, governed by Meta's own data policy.</li>
-          <li><strong>Payment gateway (Razorpay)</strong>: cookies necessary to process your payment securely.</li>
-          <li><strong>Scheduling and form tools (e.g. Calendly, Typeform, or equivalent)</strong>: cookies necessary to embed and operate the booking/qualification forms.</li>
-          <li><strong>Video hosting (e.g. Wistia or equivalent)</strong>: cookies to track video engagement.</li>
-          <li><strong>Analytics providers</strong>: as described above.</li>
-        </ul>
-        <p>
-          Each third party's use of cookies is governed by its own privacy and cookie policy, which we encourage you to review.
-        </p>
-
-        <h2>Managing Your Cookie Preferences</h2>
-        <p>
-          You can control or delete cookies through your browser settings. Most browsers let you refuse cookies, delete existing cookies, or be notified when a cookie is set. Note that blocking strictly necessary cookies may prevent parts of our website (such as the payment checkout) from working properly.
-        </p>
-        <p>For marketing cookies specifically, you can also opt out via:</p>
-        <ul>
-          <li>Your device's ad-tracking settings (e.g. "Limit Ad Tracking" on iOS, "Opt out of Ads Personalization" on Android).</li>
-          <li>Meta's own ad preferences, accessible through your Facebook/Instagram account settings.</li>
-          <li>Industry opt-out tools such as the Digital Advertising Alliance's consumer choice page, where applicable.</li>
+          <li><strong>Identity Data:</strong> Name, business name, and job title.</li>
+          <li><strong>Contact Data:</strong> Email address, phone number, and physical business address.</li>
+          <li><strong>Technical Data:</strong> IP address, browser type, time zone setting, operating system, and information about how you use our website.</li>
+          <li><strong>Transaction Data:</strong> Details of services you have purchased from us and payment-related information (processed securely through third-party payment gateways).</li>
+          <li><strong>Communication Data:</strong> Information you provide when you contact us via forms, emails, or phone calls.</li>
         </ul>
 
-        <h2>Consent</h2>
+        <h2>How We Use Your Information</h2>
+        <p>We use your personal data only where we have a valid legal basis to do so, primarily for the following purposes:</p>
+        <ul>
+          <li>To provide, operate, and maintain our services.</li>
+          <li>To communicate with you regarding your enquiries, bookings, or active projects.</li>
+          <li>To process transactions and send related information, including invoices and confirmations.</li>
+          <li>To improve, personalize, and expand our website and marketing efforts.</li>
+          <li>To comply with legal obligations and enforce our terms and conditions.</li>
+        </ul>
+
+        <h2>Information Sharing and Disclosure</h2>
         <p>
-          Where required by applicable law, we will present a cookie consent banner on your first visit to our website, allowing you to accept or manage non-essential cookies before they are set. Continued use of our website after accepting, or after being given the opportunity to manage preferences, constitutes consent to our use of cookies as described here.
+          We do not sell, rent, or trade your personal data to third parties. We may share your data with trusted third parties strictly under the following circumstances:
+        </p>
+        <ul>
+          <li><strong>Service Providers:</strong> We employ third-party companies and individuals to facilitate our services (e.g., payment processing, email delivery, hosting). These providers have access to your personal data only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.</li>
+          <li><strong>Legal Requirements:</strong> We may disclose your data if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).</li>
+          <li><strong>Business Transfers:</strong> If No Books University is involved in a merger, acquisition, or asset sale, your personal data may be transferred as a business asset.</li>
+        </ul>
+
+        <h2>Data Security and Retention</h2>
+        <p>
+          We implement appropriate technical and organizational measures to protect your personal data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access. However, please remember that no method of transmission over the internet or electronic storage is 100% secure.
+        </p>
+        <p>
+          We retain your personal data only for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.
         </p>
 
-        <h2>Changes to This Policy</h2>
+        <h2>Your Rights Under the DPDP Act, 2023</h2>
+        <p>Under the Digital Personal Data Protection Act, 2023, you as a Data Principal have the right to:</p>
+        <ul>
+          <li><strong>Access:</strong> Request a summary of your personal data being processed by us.</li>
+          <li><strong>Correction and Erasure:</strong> Request the correction, completion, or updating of your personal data, and ask for its erasure if it is no longer necessary for the purpose it was collected.</li>
+          <li><strong>Grievance Redressal:</strong> Register a grievance regarding the processing of your personal data.</li>
+          <li><strong>Right to Nominate:</strong> Nominate another individual to exercise your rights in the event of death or incapacity.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact our Grievance Officer using the details provided below.</p>
+
+        <h2>Third-Party Links</h2>
         <p>
-          We may update this Cookie Policy from time to time. The "Last Updated" date above reflects the most recent revision.
+          Our website may contain links to third-party websites or services that are not owned or controlled by No Books University. We are not responsible for the privacy practices or the content of these third-party sites.
         </p>
 
-        <h2>Contact Us</h2>
+        <h2>Grievance Officer</h2>
         <p>
-          If you have any questions about our use of cookies or privacy practices, feel free to reach out to us at: join@nobooksuniversity.com
+          In accordance with the Digital Personal Data Protection Act, 2023, the contact details of our Grievance Officer are provided below. If you have any complaints or concerns regarding this Privacy Policy or the processing of your personal data, please contact:
         </p>
-        
+        <p className="font-semibold mt-4">
+          Name: Arpit Sharma<br />
+          Email: join@nobooksuniversity.com<br />
+          Address: B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029<br />
+        </p>
+
         <div className="mt-12 p-6 bg-foreground/5 rounded-xl border border-foreground/10 text-center font-medium">
-          This Cookie Policy should be read together with our Privacy Policy.
+          We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
         </div>
       </div>
     </div>

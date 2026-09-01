@@ -65,6 +65,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/10 text-xs text-white/40">
           <p>&copy; {new Date().getFullYear()} No Books University. All rights reserved.</p>
           <div className="flex gap-6">
+            <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>

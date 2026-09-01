@@ -115,10 +115,10 @@ export default function HowWeWorkPage() {
             READY TO START THE <span className="text-brand">PROCESS?</span>
           </h2>
           <p className="text-lg md:text-2xl text-black/60 mb-12 max-w-3xl font-medium">
-            Book a consultation to discuss your current bottlenecks and how our methodology can reconstruct your operations.
+            Get in touch to discuss your current bottlenecks and how our methodology can reconstruct your operations.
           </p>
-          <Button size="lg" asChild className="bg-black text-white hover:bg-black/90 px-12 py-8 text-xl rounded-full font-bold transition-all hover:scale-105">
-            <Link href="/contact">Book a Consultation</Link>
+          <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 px-12 py-8 text-xl rounded-full font-bold shadow-[0_0_50px_rgba(255,255,255,0.1)] hover:scale-105 transition-all">
+            <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>

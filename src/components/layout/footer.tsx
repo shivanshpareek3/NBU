@@ -49,8 +49,8 @@ export function Footer() {
             <h4 className="font-semibold uppercase tracking-wider text-sm text-white/40">Contact</h4>
             <ul className="space-y-4">
               <li>
-                <a href="mailto:nobooksuniversity@gmail.com" className="text-sm hover:text-brand transition-colors block break-words">
-                  nobooksuniversity@gmail.com
+                <a href="mailto:join@nobooksuniversity.com" className="text-sm hover:text-brand transition-colors block break-words">
+                  join@nobooksuniversity.com
                 </a>
               </li>
               <li>

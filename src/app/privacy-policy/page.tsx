@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
 
         <h2>Contact Us</h2>
         <p>
-          If you have any questions about our use of cookies or privacy practices, feel free to reach out to us at: nobooksuniversity@gmail.com
+          If you have any questions about our use of cookies or privacy practices, feel free to reach out to us at: join@nobooksuniversity.com
         </p>
         
         <div className="mt-12 p-6 bg-foreground/5 rounded-xl border border-foreground/10 text-center font-medium">

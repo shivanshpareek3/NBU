@@ -141,7 +141,7 @@ export default async function ServicePage({ params }: PageProps) {
             <span className="text-brand">{service.title}?</span>
           </h2>
           <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 px-12 py-8 text-xl rounded-full font-bold shadow-[0_0_50px_rgba(255,255,255,0.1)] hover:scale-105 transition-all">
-            <Link href="/contact">Build Your Infrastructure</Link>
+            <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>

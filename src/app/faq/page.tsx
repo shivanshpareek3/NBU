@@ -130,7 +130,7 @@ export default function FAQPage() {
             STILL HAVE <span className="text-brand">QUESTIONS?</span>
           </h2>
           <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 px-12 py-8 text-xl rounded-full font-bold transition-all hover:scale-105 shadow-2xl">
-            <Link href="/contact">Book A Consultation</Link>
+            <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>

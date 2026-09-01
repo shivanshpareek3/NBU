@@ -249,7 +249,7 @@ export default function Home() {
           >
             <Link href="/contact">
               <Button className="bg-white text-black hover:bg-white/90 px-8 py-5 text-sm rounded-full font-bold shadow-[0_0_35px_rgba(255,255,255,0.15)] hover:scale-105 transition-all">
-                Build Your Business
+                Get in Touch
               </Button>
             </Link>
             <Link href="/services">
@@ -267,7 +267,7 @@ export default function Home() {
             className="mt-12 flex flex-wrap items-center justify-center gap-3"
           >
             {[
-              { value: "$1.5M+", label: "Revenue Generated" },
+              { value: "₹12 Cr+", label: "Revenue Generated" },
               { value: "50+", label: "Businesses Systemised" },
               { value: "5-Stage", label: "Proven Process" },
             ].map((pill, i) => (
@@ -529,8 +529,8 @@ export default function Home() {
             </h3>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-brand text-white hover:bg-brand/90 px-10 py-7 text-base rounded-full font-bold shadow-[0_0_50px_rgba(59,130,246,0.35)] hover:scale-105 transition-all">
-                  Book A Consultation
+                <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 px-12 py-8 text-xl rounded-full font-bold shadow-[0_0_50px_rgba(255,255,255,0.1)] hover:scale-105 transition-all">
+                  <Link href="/contact">Get in Touch</Link>
                 </Button>
               </Link>
               <Link href="/services">

@@ -92,7 +92,7 @@ export function Navbar() {
               href="/contact"
               className="inline-flex items-center gap-2 bg-brand text-white text-xs font-bold uppercase tracking-[0.15em] px-6 py-3 rounded-full hover:bg-brand/90 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.25)]"
             >
-              Build Your Business
+              Get in Touch
             </Link>
           </div>
 
@@ -135,7 +135,7 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
               className="w-full flex items-center justify-center bg-brand text-white text-sm font-bold uppercase tracking-[0.15em] px-8 py-5 rounded-full hover:bg-brand/90 transition-all duration-300"
             >
-              Build Your Business
+              Get in Touch
             </Link>
           </div>
         </div>

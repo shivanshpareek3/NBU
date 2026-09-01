@@ -49,7 +49,7 @@ export function FoundersCTA() {
               className="group inline-flex items-center justify-center gap-4 bg-brand text-white text-sm font-bold uppercase tracking-[0.2em] px-10 py-5 rounded-full hover:bg-brand/90 hover:scale-105 active:scale-95 transition-all duration-500 shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:shadow-[0_0_60px_rgba(59,130,246,0.5)] relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-full skew-x-12 transition-transform duration-700 ease-out" />
-              <span>Let&apos;s Build Your Business</span>
+              <span>Get in Touch</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </motion.div>

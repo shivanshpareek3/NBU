@@ -166,8 +166,8 @@ export default function TermsPage() {
         <p className="font-semibold mt-4">
           No Books University<br />
           Airport road jaipur - 302029<br />
-          Email: nobooksuniversity@gmail.com<br />
-          Legal notices: nobooksuniversity@gmail.com<br />
+          Email: join@nobooksuniversity.com<br />
+          Legal notices: join@nobooksuniversity.com<br />
           GSTIN: 08PPQPS3053P1ZL
         </p>
 

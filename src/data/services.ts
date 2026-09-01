@@ -6,7 +6,7 @@ export const SERVICES = [
     title: "Business Systems",
     slug: "business-systems",
     shortDescription: "Build the operating systems that allow the business to function consistently without everything depending on the founder.",
-    fullDescription: "We diagnose the critical path of your business and build robust operating systems. This ensures every core function happens predictably, on time, and to standard—without you having to manually oversee it.",
+    fullDescription: "We diagnose the critical path of your business and build robust operating systems. This ensures every core function happens predictably, on time, and to standard, without you having to manually oversee it.",
     problem: "Every decision comes back to you. The business halts when you are unavailable.",
     outcomes: [
       "Consistent execution across all departments",

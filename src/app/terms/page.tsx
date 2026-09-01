@@ -145,7 +145,7 @@ export default function TermsPage() {
 
         <h2>7. INTELLECTUAL PROPERTY</h2>
         <p>
-          7.1 All materials provided by us — including frameworks, methodologies, templates, scripts, checklists, standard operating procedures, dashboards, recordings, documents, presentations, worksheets and written guidance ("Materials") — are and remain the exclusive intellectual property of No Books University.
+          7.1 All materials provided by us (including frameworks, methodologies, templates, scripts, checklists, standard operating procedures, dashboards, recordings, documents, presentations, worksheets and written guidance ("Materials")) are and remain the exclusive intellectual property of No Books University.
         </p>
         <p>
           7.2 Upon payment, you are granted a limited, non-exclusive, non-transferable, non-sublicensable, revocable licence to use the Materials solely for the internal business purposes of the specific business named in your agreement, for as long as this licence remains in force.

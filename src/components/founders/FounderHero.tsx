@@ -79,7 +79,7 @@ export function FounderHero() {
             transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="text-lg md:text-xl text-white/50 max-w-2xl mb-12 leading-relaxed font-light"
           >
-            No Books University was built around a simple idea — strong businesses need strong systems, clear ownership, capable teams, and structured execution.
+            No Books University was built around a simple idea: strong businesses need strong systems, clear ownership, capable teams, and structured execution.
           </motion.p>
 
           <motion.div

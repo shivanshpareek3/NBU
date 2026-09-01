@@ -55,10 +55,10 @@ export default function AboutPage() {
             </motion.div>
             <motion.div {...fadeInUp} className="md:w-7/12 flex flex-col justify-center space-y-8">
               <p className="text-2xl md:text-3xl font-light text-white/90 leading-relaxed">
-                No Books University installs a client-acquisition system inside founder-led service businesses — the kind of business where the founder is still closely involved in getting and closing clients, doing work that deserves a real ticket size, but without a reliable, repeatable way to bring in new high-value clients month after month.
+                No Books University installs a client-acquisition system inside founder-led service businesses: the kind of business where the founder is still closely involved in getting and closing clients, doing work that deserves a real ticket size, but without a reliable, repeatable way to bring in new high-value clients month after month.
               </p>
               <p className="text-xl text-white/60 leading-relaxed font-light">
-                We don't run your ads for you as an agency, and we don't hand you a library of videos and wish you luck. We work directly inside your business — your ad accounts, your lead flow, your sales process — and install the specific system that gets you qualified conversations with people who can actually afford what you sell, consistently, not as a one-off spike.
+                We don't run your ads for you as an agency, and we don't hand you a library of videos and wish you luck. We work directly inside your business (your ad accounts, your lead flow, your sales process) and install the specific system that gets you qualified conversations with people who can actually afford what you sell, consistently, not as a one-off spike.
               </p>
             </motion.div>
           </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
                 {[
                   "Monthly revenue of ₹5 lakh or more.",
                   "An average ticket size of ₹50,000 or more per client.",
-                  "A founder or leadership team ready to be hands-on during installation — this is not a hands-off, set-and-forget service."
+                  "A founder or leadership team ready to be hands-on during installation. This is not a hands-off, set-and-forget service."
                 ].map((item, i) => (
                   <li key={i} className="flex items-start bg-[#0a0a0a] p-6 rounded-xl border border-white/5">
                     <span className="text-brand mr-5 mt-1 flex-shrink-0">
@@ -117,10 +117,10 @@ export default function AboutPage() {
               
               <div className="bg-[#111] p-10 rounded-2xl border-l-4 border-brand">
                 <p className="text-lg text-white/80 leading-relaxed font-light mb-6">
-                  We <span className="font-medium underline decoration-brand decoration-2 underline-offset-4">do not</span> work with coaches, course creators, or infopreneurs. Our system is built for businesses that deliver a real service to real clients at a real price — interior design studios, marketing and creative agencies, IT and AI services firms, event companies, recruitment firms, and businesses of a similar shape.
+                  We <span className="font-medium underline decoration-brand decoration-2 underline-offset-4">do not</span> work with coaches, course creators, or infopreneurs. Our system is built for businesses that deliver a real service to real clients at a real price: interior design studios, marketing and creative agencies, IT and AI services firms, event companies, recruitment firms, and businesses of a similar shape.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed font-light">
-                  If you're not sure whether your business fits, the 1-1 session is exactly where we figure that out together, honestly — including telling you if we're not the right fit, before you spend anything beyond the session fee.
+                  If you're not sure whether your business fits, the 1-1 session is exactly where we figure that out together, honestly, including telling you if we're not the right fit, before you spend anything beyond the session fee.
                 </p>
               </div>
             </motion.div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
             <motion.div {...fadeInUp}>
               <h2 className="text-4xl md:text-5xl font-heading font-bold uppercase mb-8">Why "No Books<br/>University"</h2>
               <p className="text-xl text-white/70 leading-relaxed font-light">
-                The name is a statement of how we work: no textbooks, no theory-heavy modules, no sitting through content you'll never use. We install a working system directly inside your business, and you learn it by watching it run and operate inside your own operations — not by studying it on the side.
+                The name is a statement of how we work: no textbooks, no theory-heavy modules, no sitting through content you'll never use. We install a working system directly inside your business, and you learn it by watching it run and operate inside your own operations, not by studying it on the side.
               </p>
             </motion.div>
 
@@ -184,7 +184,7 @@ export default function AboutPage() {
                   Our Commitment
                 </h2>
                 <p className="text-xl text-white/70 leading-relaxed font-light">
-                  We say what we mean in our guarantees, and we mean exactly what's written in our Performance Commitment and Refund and Cancellation Policy — not more, not less. If you do your part, we do ours until the outcome is delivered.
+                  We say what we mean in our guarantees, and we mean exactly what's written in our Performance Commitment and Refund and Cancellation Policy, not more, not less. If you do your part, we do ours until the outcome is delivered.
                 </p>
               </div>
               <div className="md:w-1/3 flex justify-center md:justify-end w-full mt-8 md:mt-0">

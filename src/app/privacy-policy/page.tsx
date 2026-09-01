@@ -17,19 +17,19 @@ export default function PrivacyPolicyPage() {
         
         <h2>1. What Are Cookies</h2>
         <p>
-          Cookies are small text files placed on your device when you visit a website. They help the website function, remember your preferences, and — for marketing cookies — measure how you interact with ads so we can improve them. This Policy also covers similar technologies such as pixels and local storage, collectively referred to as "cookies" below.
+          Cookies are small text files placed on your device when you visit a website. They help the website function, remember your preferences, and (for marketing cookies) measure how you interact with ads so we can improve them. This Policy also covers similar technologies such as pixels and local storage, collectively referred to as "cookies" below.
         </p>
 
         <h2>2. Categories of Cookies We Use</h2>
         
         <h3 className="text-xl font-bold mt-8 mb-2">2.1 Strictly Necessary Cookies</h3>
         <p>
-          Required for the website to function — for example, to keep the payment checkout session alive, or to remember that you completed a form step. These cannot be switched off, because the website will not work properly without them.
+          Required for the website to function: for example, to keep the payment checkout session alive, or to remember that you completed a form step. These cannot be switched off, because the website will not work properly without them.
         </p>
         
         <h3 className="text-xl font-bold mt-8 mb-2">2.2 Performance and Analytics Cookies</h3>
         <p>
-          Help us understand how visitors use our website — which pages are viewed, how long visitors stay, where they drop off — so we can improve the site. This may include tools such as Google Analytics or equivalent.
+          Help us understand how visitors use our website (which pages are viewed, how long visitors stay, where they drop off) so we can improve the site. This may include tools such as Google Analytics or equivalent.
         </p>
         
         <h3 className="text-xl font-bold mt-8 mb-2">2.3 Marketing and Advertising Cookies</h3>
@@ -47,11 +47,11 @@ export default function PrivacyPolicyPage() {
           Some cookies are placed by third parties who provide services embedded in our website, including:
         </p>
         <ul>
-          <li><strong>Meta (Facebook/Instagram)</strong> — Pixel and Conversions API, governed by Meta's own data policy.</li>
-          <li><strong>Payment gateway (Razorpay)</strong> — cookies necessary to process your payment securely.</li>
-          <li><strong>Scheduling and form tools (e.g. Calendly, Typeform, or equivalent)</strong> — cookies necessary to embed and operate the booking/qualification forms.</li>
-          <li><strong>Video hosting (e.g. Wistia or equivalent)</strong> — cookies to track video engagement.</li>
-          <li><strong>Analytics providers</strong> — as described in Section 2.2.</li>
+          <li><strong>Meta (Facebook/Instagram)</strong>: Pixel and Conversions API, governed by Meta's own data policy.</li>
+          <li><strong>Payment gateway (Razorpay)</strong>: cookies necessary to process your payment securely.</li>
+          <li><strong>Scheduling and form tools (e.g. Calendly, Typeform, or equivalent)</strong>: cookies necessary to embed and operate the booking/qualification forms.</li>
+          <li><strong>Video hosting (e.g. Wistia or equivalent)</strong>: cookies to track video engagement.</li>
+          <li><strong>Analytics providers</strong>: as described in Section 2.2.</li>
         </ul>
         <p>
           Each third party's use of cookies is governed by its own privacy and cookie policy, which we encourage you to review.

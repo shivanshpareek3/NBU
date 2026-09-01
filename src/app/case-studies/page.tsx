@@ -108,7 +108,7 @@ export default function CaseStudiesPage() {
             <span className="text-brand">CASE STUDY.</span>
           </h2>
           <Button size="lg" asChild className="bg-black text-white hover:bg-black/90 px-12 py-8 text-xl rounded-full font-bold transition-all hover:scale-105 shadow-2xl">
-            <Link href="/contact">Book Your Consultation</Link>
+            <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>

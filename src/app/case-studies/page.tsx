@@ -23,14 +23,6 @@ export default function CaseStudiesPage() {
       system: "Installed strict operational systems, automated client onboarding workflows, and restructured the junior team.",
       outcome: "Increased profit margins by 35% and reduced partner workload by 40 hours a week.",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80",
-    },
-    {
-      client: "High-Ticket Coaching Program",
-      industry: "Education / Consulting",
-      problem: "Sales were unpredictable. The founder was the only one capable of closing deals, creating a massive single point of failure.",
-      system: "Built a structured Sales Department from scratch. Hired, trained, and installed 3 dedicated closers with strict scripts and KPIs.",
-      outcome: "Generated ₹16 Cr in additional revenue in 12 months with the founder entirely removed from sales calls.",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80",
     }
   ]
 
@@ -47,6 +39,9 @@ export default function CaseStudiesPage() {
             </h1>
             <p className="text-lg md:text-3xl text-white/60 font-medium max-w-4xl leading-relaxed mt-12 mx-auto">
               We don't deal in theory. We build actual infrastructure that generates measurable scale, reclaims founder time, and transforms chaotic businesses into predictable machines.
+            </p>
+            <p className="text-sm md:text-base text-brand font-medium max-w-2xl leading-relaxed mt-8 mx-auto uppercase tracking-widest border border-brand/20 bg-brand/5 py-3 px-6 rounded-lg">
+              Note: The case studies presented below are illustrative examples of the systems we build.
             </p>
           </motion.div>
         </div>

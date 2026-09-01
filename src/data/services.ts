@@ -140,5 +140,25 @@ export const SERVICES = [
       "Implement accountability charts",
       "Executive coaching and transition"
     ]
+  },
+  {
+    id: "08",
+    title: "Finance & Analytics Setup",
+    slug: "finance-analytics-setup",
+    shortDescription: "Build financial infrastructure, cash flow tracking, profitability metrics, and automated reporting.",
+    fullDescription: "Growth without margin is just expensive chaos. We install strict financial tracking, pricing frameworks, and profitability dashboards so you always know your true numbers.",
+    problem: "Financials are a black box. You only look at the bank balance and your accountant only talks to you at tax time.",
+    outcomes: [
+      "Real-time profitability tracking",
+      "Predictable cash flow management",
+      "Automated financial dashboards",
+      "Optimized service pricing"
+    ],
+    process: [
+      "Audit current financial processes",
+      "Install automated KPI dashboards",
+      "Implement strict collection systems",
+      "Train team on basic financial reporting"
+    ]
   }
 ];

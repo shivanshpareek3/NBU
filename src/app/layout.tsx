@@ -19,10 +19,6 @@ export const metadata: Metadata = {
   title: "No Books University | Build a Business That Doesn't Depend On You",
   description:
     "No Books University helps founders and service-based businesses build systems, SOPs, departments, teams and operational infrastructure that make the business more structured, scalable and less founder-dependent.",
-  icons: {
-    icon: "/logo-no-bg.png",
-    apple: "/logo-no-bg.png",
-  },
 };
 
 export default function RootLayout({

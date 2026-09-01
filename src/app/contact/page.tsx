@@ -75,7 +75,7 @@ export default function ContactPage() {
               <div className="space-y-12">
                 <div>
                   <h3 className="font-semibold uppercase tracking-[0.2em] text-sm text-brand mb-4">Direct Email</h3>
-                  <a href="mailto:nobooksuniversity@gmail.com" className="text-2xl md:text-3xl font-heading font-bold hover:text-brand transition-colors break-words">
+                  <a href="mailto:nobooksuniversity@gmail.com" className="text-xl md:text-2xl font-heading font-bold hover:text-brand transition-colors break-words">
                     nobooksuniversity@gmail.com
                   </a>
                 </div>

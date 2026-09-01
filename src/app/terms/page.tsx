@@ -7,7 +7,7 @@ export default function TermsPage() {
         
         <h2>1. INTRODUCTION AND ACCEPTANCE</h2>
         <p>
-          1.1 These Terms and Conditions ("Terms") govern your access to and use of the website [WEBSITE] ("Website") and all services, materials, sessions, systems, templates, documents and deliverables offered by [LEGAL NAME], a sole proprietorship carrying on business under the trade name No Books University, having its registered place of business at [REGISTERED ADDRESS], India, holding GSTIN [GSTIN] ("No Books University", "we", "us", "our").
+          1.1 These Terms and Conditions ("Terms") govern your access to and use of the website [WEBSITE] ("Website") and all services, materials, sessions, systems, templates, documents and deliverables offered by No Books University, a sole proprietorship carrying on business under the trade name No Books University, having its registered place of business at B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029, India, holding GSTIN 08PPQPS3053P1ZL ("No Books University", "we", "us", "our").
         </p>
         <p>
           1.2 By accessing the Website, submitting any form, making any payment, booking any session, or engaging our services in any manner, you ("you", "your", "the Client") confirm that you have read, understood and agree to be bound by these Terms, together with our Privacy Policy, Refund and Cancellation Policy, Performance Commitment, Disclaimer, Acceptable Use Policy and Service Delivery Policy, each of which is incorporated into these Terms by reference.
@@ -293,13 +293,13 @@ export default function TermsPage() {
         </p>
         <ul>
           <li>(a) the tribunal shall consist of a sole arbitrator appointed by mutual agreement, failing which appointed in accordance with the Act;</li>
-          <li>(b) the seat and venue of arbitration shall be [CITY], [STATE], India;</li>
+          <li>(b) the seat and venue of arbitration shall be Jaipur, Rajasthan, India;</li>
           <li>(c) the language shall be English;</li>
           <li>(d) the arbitral award shall be final and binding;</li>
           <li>(e) each party shall bear its own costs unless the tribunal directs otherwise.</li>
         </ul>
         <p>
-          16.3 Jurisdiction. Subject to clause 16.2, the courts at [CITY], [STATE], India shall have exclusive jurisdiction over any matter arising out of these Terms.
+          16.3 Jurisdiction. Subject to clause 16.2, the courts at Jaipur, Rajasthan, India shall have exclusive jurisdiction over any matter arising out of these Terms.
         </p>
         <p>
           16.4 Governing law. These Terms are governed by and construed in accordance with the laws of India.
@@ -331,7 +331,7 @@ export default function TermsPage() {
           17.7 Force majeure. Neither party is liable for failure or delay caused by events beyond its reasonable control, including natural disaster, epidemic, war, civil unrest, governmental action, strike, failure of telecommunications or internet infrastructure, or failure of a third-party platform. Where such an event continues for more than sixty days, either party may terminate on written notice, and we will refund any amount paid for services not yet provided.
         </p>
         <p>
-          17.8 Notices. Notices to us must be sent to [LEGAL EMAIL] and to [REGISTERED ADDRESS]. Notices to you will be sent to the email address you provided. Email notices are deemed received on the next business day.
+          17.8 Notices. Notices to us must be sent to [LEGAL EMAIL] and to B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029. Notices to you will be sent to the email address you provided. Email notices are deemed received on the next business day.
         </p>
         <p>
           17.9 Relationship. Nothing creates a partnership, joint venture, agency, franchise or employment relationship between the parties. Neither party may bind the other.
@@ -345,12 +345,12 @@ export default function TermsPage() {
 
         <h2>18. CONTACT</h2>
         <p className="font-semibold mt-4">
-          [LEGAL NAME] (trading as No Books University)<br />
-          [REGISTERED ADDRESS]<br />
+          No Books University (trading as No Books University)<br />
+          B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029<br />
           Email: [EMAIL]<br />
           Legal notices: [LEGAL EMAIL]<br />
           Phone: [PHONE]<br />
-          GSTIN: [GSTIN]
+          GSTIN: 08PPQPS3053P1ZL
         </p>
 
         <div className="mt-12 p-6 bg-foreground/5 rounded-xl border border-foreground/10 text-center font-medium">

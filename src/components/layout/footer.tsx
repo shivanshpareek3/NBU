@@ -55,7 +55,7 @@ export function Footer() {
               </li>
               <li>
                 <address className="not-italic text-sm text-white/60 leading-relaxed">
-                  Airport road jaipur - 302029
+                  No Books University - Airport Road Jaipur - 302029
                 </address>
               </li>
             </ul>

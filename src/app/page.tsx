@@ -237,7 +237,7 @@ export default function Home() {
             transition={{ duration: 0.9 }}
             className="mt-10 text-sm md:text-base text-white/45 font-medium max-w-xl text-center leading-relaxed"
           >
-            We build the systems, teams, and operating infrastructure that turn founder-dependent businesses into structured, predictable companies.
+            Most Service Businesses Can&apos;t Run Without the Founder. We Build the Systems, Teams, and Processes That Fix That.
           </motion.p>
 
           {/* CTAs */}
@@ -250,11 +250,6 @@ export default function Home() {
             <Link href="/contact">
               <Button className="bg-white text-black hover:bg-white/90 px-8 py-5 text-sm rounded-full font-bold shadow-[0_0_35px_rgba(255,255,255,0.15)] hover:scale-105 transition-all">
                 Get in Touch
-              </Button>
-            </Link>
-            <Link href="/services">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/5 px-8 py-5 text-sm rounded-full font-medium hover:scale-105 transition-all">
-                Explore What We Build →
               </Button>
             </Link>
           </motion.div>

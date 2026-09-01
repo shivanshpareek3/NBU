@@ -42,6 +42,7 @@ export function Footer() {
               <li><Link href="/services/hiring-team-setup" className="text-sm hover:text-brand transition-colors">Hiring & Team Setup</Link></li>
               <li><Link href="/services/operations-setup" className="text-sm hover:text-brand transition-colors">Operations Setup</Link></li>
               <li><Link href="/services/leadership-accountability" className="text-sm hover:text-brand transition-colors">Leadership & Accountability</Link></li>
+              <li><Link href="/services/finance-analytics-setup" className="text-sm hover:text-brand transition-colors">Finance & Analytics Setup</Link></li>
             </ul>
           </div>
 

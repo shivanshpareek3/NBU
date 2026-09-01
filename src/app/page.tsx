@@ -254,31 +254,6 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          {/* Metric pills */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: text2.length === LINE2.length ? 1 : 0, y: text2.length === LINE2.length ? 0 : 16 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="mt-12 flex flex-wrap items-center justify-center gap-3"
-          >
-            {[
-              { value: "₹12 Cr+", label: "Revenue Generated" },
-              { value: "50+", label: "Businesses Systemised" },
-              { value: "5-Stage", label: "Proven Process" },
-            ].map((pill, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.85 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="flex items-center gap-3 bg-white/[0.05] border border-white/10 rounded-full px-5 py-2.5 backdrop-blur-md"
-              >
-                <span className="text-white font-heading font-bold text-base">{pill.value}</span>
-                <span className="w-px h-4 bg-white/15" />
-                <span className="text-white/45 text-xs font-medium">{pill.label}</span>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
 
         {/* Scroll indicator */}
@@ -325,7 +300,7 @@ export default function Home() {
               For Everything.
             </h2>
             <p className="mt-10 text-lg md:text-2xl font-medium text-white/45 leading-relaxed max-w-3xl mx-auto">
-              If your operations halt when you step away, you don't own a business. You own a high-stress, unpredictable job.
+              Most founders are stuck doing everything themselves — managing the team, chasing leads, approving every decision — because there's no system or strategy behind the business. That's what we fix.
             </p>
           </motion.div>
         </div>
@@ -348,10 +323,10 @@ export default function Home() {
               Founder<br />Dependent
             </h2>
             <ul className="mt-10 space-y-5 text-lg text-white/55">
-              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> Chaotic operations</li>
-              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> Founder burnout &amp; stress</li>
-              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> Revenue ceiling</li>
-              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> No exit or freedom</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> Can't manage team properly</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> No consistent lead flow or strategy</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> Inconsistent growth & scaling issues</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-red-500 rounded-full shrink-0" /> Everything requires founder approval</li>
             </ul>
           </motion.div>
         </div>
@@ -393,7 +368,7 @@ export default function Home() {
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold uppercase tracking-tight">What We Build</h2>
             <p className="text-base md:text-lg mt-2 md:mt-4 text-white/45 max-w-2xl">
-              The complete operational infrastructure required to detach the founder from day-to-day execution.
+              We help you build systems and SOPs across every department—including Marketing, Sales, Operations, HR, Admin, and Finance—so your business can run without you.
             </p>
           </motion.div>
 

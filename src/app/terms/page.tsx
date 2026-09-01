@@ -7,7 +7,7 @@ export default function TermsPage() {
         
         <h2>Introduction and Acceptance</h2>
         <p>
-          These Terms and Conditions govern your access to and use of our website and all services, materials, sessions, systems, templates, documents, and deliverables offered by No Books University. We are a sole proprietorship carrying on business under the trade name No Books University, having our registered place of business at B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029, India, holding GSTIN 08PPQPS3053P1ZL.
+          These Terms and Conditions govern your access to and use of our website and all services, materials, sessions, systems, templates, documents, and deliverables offered by No Books University. We are a sole proprietorship carrying on business under the trade name No Books University, having our registered place of business at Airport road jaipur - 302029, India, holding GSTIN 08PPQPS3053P1ZL.
         </p>
         <p>
           By accessing the website, submitting any form, making any payment, booking any session, or engaging our services in any manner, you confirm that you have read, understood, and agree to be bound by these Terms, together with our Privacy Policy, Refund and Cancellation Policy, Performance Commitment, Disclaimer, Acceptable Use Policy, and Service Delivery Policy.
@@ -165,7 +165,7 @@ export default function TermsPage() {
         <h2>Contact Us</h2>
         <p className="font-semibold mt-4">
           No Books University<br />
-          B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, 302029<br />
+          Airport road jaipur - 302029<br />
           Email: nobooksuniversity@gmail.com<br />
           Legal notices: nobooksuniversity@gmail.com<br />
           GSTIN: 08PPQPS3053P1ZL

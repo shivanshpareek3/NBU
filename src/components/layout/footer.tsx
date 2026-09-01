@@ -55,9 +55,7 @@ export function Footer() {
               </li>
               <li>
                 <address className="not-italic text-sm text-white/60 leading-relaxed">
-                  B-26, SHIVPURI COLONY, <br />
-                  AIRPORT ROAD, SANGANER, <br />
-                  Jaipur, Rajasthan, 302029
+                  Airport road jaipur - 302029
                 </address>
               </li>
             </ul>

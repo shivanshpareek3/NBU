@@ -171,7 +171,7 @@ export default function AboutPage() {
             <motion.div {...fadeInUp}>
               <h2 className="text-4xl md:text-5xl font-heading font-bold uppercase mb-8">How We're<br/>Structured</h2>
               <p className="text-xl text-white/70 leading-relaxed font-light">
-                No Books University is a sole proprietorship operated by Arpit Sharma, registered at B-26, SHIVPURI COLONY, AIRPORT ROAD, SANGANER, Jaipur, Rajasthan, India (GSTIN: 08PPQPS3053P1ZL). It is a separate business from any other venture the proprietor is involved with, and this website, these policies, and every commitment on this site apply to No Books University alone.
+                No Books University is a sole proprietorship operated by Arpit Sharma, registered at Airport road jaipur - 302029 (GSTIN: 08PPQPS3053P1ZL). It is a separate business from any other venture the proprietor is involved with, and this website, these policies, and every commitment on this site apply to No Books University alone.
               </p>
             </motion.div>
           </div>

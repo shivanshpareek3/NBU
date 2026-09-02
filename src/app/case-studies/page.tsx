@@ -41,7 +41,7 @@ export default function CaseStudiesPage() {
               We don't deal in theory. We build actual infrastructure that generates measurable scale, reclaims founder time, and transforms chaotic businesses into predictable machines.
             </p>
             <p className="text-sm md:text-base text-brand font-medium max-w-2xl leading-relaxed mt-8 mx-auto uppercase tracking-widest border border-brand/20 bg-brand/5 py-3 px-6 rounded-lg">
-              Note: The case studies presented below are illustrative examples of the systems we build.
+              Note: The case studies presented below are illustrative examples of the systems we build. Results vary by business.
             </p>
           </motion.div>
         </div>

@@ -3,7 +3,6 @@
 import * as React from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { SERVICES } from "@/data/services"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = React.useState(false)
@@ -138,9 +137,12 @@ export default function ContactPage() {
                       <label htmlFor="service" className="text-xs font-bold tracking-[0.2em] uppercase text-white/40">Primary Operational Bottleneck *</label>
                       <select required id="service" name="service" className="w-full h-14 px-6 border border-white/10 bg-[#111] text-white rounded-xl focus:outline-none focus:border-brand transition-colors appearance-none cursor-pointer">
                         <option value="" disabled selected>Select an area...</option>
-                        {SERVICES.map(s => (
-                          <option key={s.id} value={s.title}>{s.title}</option>
-                        ))}
+                        <option value="Lead Generation / Marketing">Lead Generation / Marketing</option>
+                        <option value="Sales / Conversion">Sales / Conversion</option>
+                        <option value="Operations / Delivery">Operations / Delivery</option>
+                        <option value="Hiring / Team Management">Hiring / Team Management</option>
+                        <option value="Finance / Profitability">Finance / Profitability</option>
+                        <option value="Systems & SOPs">Systems & SOPs</option>
                         <option value="Not Sure / General Enquiry">Not Sure / General Enquiry</option>
                       </select>
                     </div>

@@ -12,7 +12,7 @@ export function Navbar() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/services", label: "What We Build" },
+    { href: "/outcomes", label: "Outcomes" },
     { href: "/how-we-work", label: "How We Work" },
     { href: "/about", label: "About" },
     { href: "/founders", label: "Founder" },

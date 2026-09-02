@@ -33,20 +33,6 @@ export function Footer() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-semibold uppercase tracking-wider text-sm text-white/40">Services</h4>
-            <ul className="space-y-4">
-              <li><Link href="/services/business-systems" className="text-sm hover:text-brand transition-colors">Business Systems</Link></li>
-              <li><Link href="/services/sop-process-setup" className="text-sm hover:text-brand transition-colors">SOP & Process Setup</Link></li>
-              <li><Link href="/services/marketing-department-setup" className="text-sm hover:text-brand transition-colors">Marketing Department</Link></li>
-              <li><Link href="/services/sales-department-setup" className="text-sm hover:text-brand transition-colors">Sales Department</Link></li>
-              <li><Link href="/services/hiring-team-setup" className="text-sm hover:text-brand transition-colors">Hiring & Team Setup</Link></li>
-              <li><Link href="/services/operations-setup" className="text-sm hover:text-brand transition-colors">Operations Setup</Link></li>
-              <li><Link href="/services/leadership-accountability" className="text-sm hover:text-brand transition-colors">Leadership & Accountability</Link></li>
-              <li><Link href="/services/finance-analytics-setup" className="text-sm hover:text-brand transition-colors">Finance & Analytics Setup</Link></li>
-            </ul>
-          </div>
-
-          <div className="space-y-6">
             <h4 className="font-semibold uppercase tracking-wider text-sm text-white/40">Contact</h4>
             <ul className="space-y-4">
               <li>

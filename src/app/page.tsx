@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { SERVICES } from "@/data/services"
 
 // ── Typewriter hook ──────────────────────────────────────────
 function useTypewriter(text: string, startDelay = 600, speed = 55) {
@@ -355,9 +354,9 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          04 · WHAT WE BUILD — sticky, pushes over shift
+          04 · OUTCOMES — sticky, pushes over shift
       ══════════════════════════════════════════ */}
-      <section className="sticky top-0 z-[40] min-h-screen flex items-center bg-[#030303] py-12 md:py-16">
+      <section id="outcomes" className="sticky top-0 z-[40] min-h-screen flex items-center bg-[#030303] py-12 md:py-16">
         <div className="container mx-auto px-6 max-w-7xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -366,14 +365,23 @@ export default function Home() {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="mb-8 md:mb-10"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold uppercase tracking-tight">What We Build</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold uppercase tracking-tight">The Outcomes We Bring To The Table</h2>
             <p className="text-base md:text-lg mt-2 md:mt-4 text-white/45 max-w-2xl">
-              We help you build systems and SOPs across every department—including Marketing, Sales, Operations, HR, Admin, and Finance—so your business can run without you.
+              We don't sell you a list of services. We work inside your business — across whatever it takes — to get you these outcomes.
             </p>
           </motion.div>
 
           <div className="border-t border-white/10">
-            {SERVICES.map((service, idx) => (
+            {[
+              "Marketing systems that bring in consistent leads — not one-off spikes.",
+              "Sales systems and pipelines — so deals don't depend on the founder chasing every lead.",
+              "Optimised finances and a clearer P&L — so you know where money is made and lost.",
+              "Lower costs, without cutting what drives growth.",
+              "More output from the same team.",
+              "AI systems that take repetitive work off the team's plate.",
+              "SOPs for every recurring process — so things run the same whether the founder is in the room or not.",
+              "Complete departments built out — marketing, sales, HR, finance, accounts, and anything else the business needs."
+            ].map((outcome, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
@@ -381,21 +389,16 @@ export default function Home() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: idx * 0.06, ease: [0.16, 1, 0.3, 1] }}
               >
-                <Link
-                  href={`/services/${service.slug}`}
+                <div
                   className="group flex items-center justify-between gap-6 border-b border-white/10 py-4 md:py-5 hover:bg-white/[0.02] transition-colors duration-300"
                 >
                   <div className="flex items-center gap-6 min-w-0">
                     <span className="text-sm font-bold text-white/20 font-heading w-8 shrink-0">0{idx + 1}</span>
                     <div>
-                      <h3 className="text-lg md:text-xl lg:text-2xl font-heading font-bold uppercase text-white group-hover:text-brand transition-colors duration-300 tracking-tight">{service.title}</h3>
-                      <p className="mt-1 text-sm text-white/40 max-w-lg group-hover:text-white/65 transition-colors duration-300">{service.shortDescription}</p>
+                      <h3 className="text-lg md:text-xl font-heading font-bold uppercase text-white group-hover:text-brand transition-colors duration-300 tracking-tight">{outcome}</h3>
                     </div>
                   </div>
-                  <div className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center shrink-0 group-hover:bg-brand group-hover:border-brand transition-all duration-300 group-hover:rotate-[-45deg]">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                  </div>
-                </Link>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -503,9 +506,9 @@ export default function Home() {
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
               </Link>
-              <Link href="/services">
+              <Link href="/outcomes">
                 <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/5 px-10 py-7 text-base rounded-full font-medium hover:scale-105 transition-all">
-                  Explore Services
+                  Explore Outcomes
                 </Button>
               </Link>
             </div>

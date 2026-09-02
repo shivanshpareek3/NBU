@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { OUTCOMES } from "@/data/outcomes"
 
 // ── Typewriter hook ──────────────────────────────────────────
 function useTypewriter(text: string, startDelay = 600, speed = 55) {
@@ -372,16 +373,7 @@ export default function Home() {
           </motion.div>
 
           <div className="border-t border-white/10">
-            {[
-              "Marketing systems that bring in consistent leads — not one-off spikes.",
-              "Sales systems and pipelines — so deals don't depend on the founder chasing every lead.",
-              "Optimised finances and a clearer P&L — so you know where money is made and lost.",
-              "Lower costs, without cutting what drives growth.",
-              "More output from the same team.",
-              "AI systems that take repetitive work off the team's plate.",
-              "SOPs for every recurring process — so things run the same whether the founder is in the room or not.",
-              "Complete departments built out — marketing, sales, HR, finance, accounts, and anything else the business needs."
-            ].map((outcome, idx) => (
+            {OUTCOMES.map((outcome, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
@@ -389,16 +381,20 @@ export default function Home() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: idx * 0.06, ease: [0.16, 1, 0.3, 1] }}
               >
-                <div
-                  className="group flex items-center justify-between gap-6 border-b border-white/10 py-4 md:py-5 hover:bg-white/[0.02] transition-colors duration-300"
+                <Link
+                  href={`/outcomes/${outcome.slug}`}
+                  className="group flex items-center justify-between gap-6 border-b border-white/10 py-4 md:py-5 hover:bg-white/[0.02] transition-colors duration-300 block"
                 >
                   <div className="flex items-center gap-6 min-w-0">
                     <span className="text-sm font-bold text-white/20 font-heading w-8 shrink-0">0{idx + 1}</span>
                     <div>
-                      <h3 className="text-lg md:text-xl font-heading font-bold uppercase text-white group-hover:text-brand transition-colors duration-300 tracking-tight">{outcome}</h3>
+                      <h3 className="text-lg md:text-xl font-heading font-bold uppercase text-white group-hover:text-brand transition-colors duration-300 tracking-tight">{outcome.title}</h3>
                     </div>
                   </div>
-                </div>
+                  <div className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center shrink-0 group-hover:bg-brand group-hover:border-brand transition-all duration-300 group-hover:rotate-[-45deg] opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 hidden md:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>

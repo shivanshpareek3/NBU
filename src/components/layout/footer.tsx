@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-[#0a0a0a] text-white pt-24 pb-12 border-t border-white/10">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-24">
-          <div className="space-y-6">
+          <div className="space-y-6 lg:col-span-2">
             <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
               <Image
                 src="/logo-removebg-preview.png"
